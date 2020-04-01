@@ -1,34 +1,114 @@
 @font-face {
   font-family: Great_Vibes;
-  src: url(GreatVibes-Regular.ttf);
+  src: url(../fonts/Great_Vibes/GreatVibes-Regular.ttf);
 }
 
 @font-face {
   font-family: Kalam-Bold;
-  src: url(Kalam-Bold.ttf);
+  src: url(../fonts/Kalam/Kalam-Bold.ttf);
 }
 
 @font-face {
   font-family: Kalam-Regular;
-  src: url(Kalam-Regular.ttf);
+  src: url(../fonts/Kalam/Kalam-Regular.ttf);
 }
 
 @font-face {
-  font-family: RobotoCondensed-Regular
-  src: url(RobotoCondensed-Regular.ttf);
+  font-family: RobotoCondensed-Regular;
+  src: url(../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
 }
 
 @font-face {
-  font-family: RobotoCondensed-Italic
-  src: url(RobotoCondensed-Italic.ttf);
+  font-family: RobotoCondensed-Italic;
+  src: url(../fonts/Roboto_Condensed/RobotoCondensed-Italic.ttf);
 }
 
 @font-face {
-  font-family: RobotoCondensed-Bold
-  src: url(RobotoCondensed-Bold.ttf);
+  font-family: RobotoCondensed-Bold;
+  src: url(../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf);
 }
 
 @font-face {
-  font-family: RobotoCondensed-BoldItalic
-  src: url(RobotoCondensed-BoldItalic.ttf);
+  font-family: RobotoCondensed-BoldItalic;
+  src: url(../fonts/Roboto_Condensed/RobotoCondensed-BoldItalic.ttf);
+}
+
+#landing_page {
+  background: url(../images/landing_page_image_hills.jpg);
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  color: #FDFDFD;
+  font-family: Kalam-Regular;
+}
+
+#landing_title {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 50%;
+  text-align: center;
+}
+
+#down_arrow {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 20px;
+}
+
+.side-menu-bar {
+  font-family: Kalam-Bold;
+  font-size: 20px;
+  background-color: #3E1C49;
+  color: #fdfdfd;
+  width: 440px;
+  height: 100vh;
+  letter-spacing: 1px;
+  position: relative;
+  float: right;
+}
+
+.menu-contents {
+  margin-left: 60px;
+  padding-top: 100px;
+}
+
+.close-menu-button img {
+  transform: translate(315px, -60px);
+}
+
+.menu-line {
+  margin: 30px 0 40px 0;
+}
+
+.menu-phone-number a,
+.menu-gmail a,
+.menu-linkedin a,
+.menu-github a {
+  font-family: RobotoCondensed-BoldItalic;
+  text-decoration: none;
+  color: #fdfdfd;
+}
+
+.menu-phone-number img,
+.menu-gmail img,
+.menu-linkedin img,
+.menu-github img {
+
+}
+
+.phone-number-row a,
+.phone-number-row img,
+.gmail-row a,
+.gmail-row img,
+.linkedin-row a,
+.linkedin-row img,
+.github-row a,
+.github-row img {
+  vertical-align: middle;
+  padding: 10px 0;
 }
