@@ -32,76 +32,47 @@
 
   <div class="menu-wrapper">
     <nav id="sidebar-menu">
-      <div class="side-menu-bar container">
-        <div class="menu-contents container">
-          <div class="close-menu-button">
-            <img src="../images/menu_close_button.svg" alt="X to close menu">
-          </div>
-          <div class="row">
-            <div class="menu-home col">
-              <p>Home</p>
-            </div>
-          </div>
 
-          <div class="row">
-            <div class="menu-about col">
-              <p>About</p>
-            </div>
-          </div>
+      <ul class="menu-items components">
+        <li class="menu-option">
+          <a href="#">Home</a>
+        </li>
+        <li class="menu-option">
+          <a href="#">About</a>
+        </li>
+        <li class="menu-option">
+          <a href="#">Portfolio</a>
+        </li>
+        <li class="menu-option">
+          <a href="#">Resume</a>
+        </li>
+        <li class="menu-option" id="menu-green-line">
+          <img src="../images/green_line_separator.svg" alt="green line">
+        </li>
+        <li class="menu-option" id="menu-contact">
+          <a href="">Contact</a>
+        </li>
+      </ul>
 
-          <div class="row">
-            <div class="menu-portfolio col">
-              <p>Portfolio</p>
-            </div>
-          </div>
+      <ul id="menu-contact-information">
+        <li id="menu-phone-number">
+          <img src="../images/phone_logo_menu.svg" alt="phone image">
+          <a href='#'>507-491-7198</a>
+        </li>
+        <li id="menu-gmail">
+          <img src="../images/email_logo_menu.svg" alt="letter image">
+          <a href='#'>sarah.rhoad@gmail.com</a>
+        </li>
+        <li id="menu-linkedin">
+          <img src="../images/linkedin_logo_menu.svg" alt="LinkedIn Logo">
+          <a href='https://linkedin.com/in/sarahrhoad' target="_blank">linkedin.com/in/sarahrhoad</a>
+        </li>
+        <li id="menu-github">
+          <img src="../images/github_logo_menu.svg" alt="GitHub Logo">
+          <a href='https://github.com/sarahrhoad/projects' target="blank">github.com/sarahrhoad/projects</a>
+        </li>
+      </ul>
 
-          <div class="row">
-            <div class="menu-resume col">
-              <p>Resume</p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="menu-line col">
-              <img src="../images/green_line_separator.svg" alt="green line">
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="menu-contact col">
-              <p>Contact</p>
-            </div>
-          </div>
-
-          <div class="phone-number-row row">
-            <div class="menu-phone-number col">
-              <img src="../images/phone_logo_menu.svg" alt="phone image">
-              <a href='#'>507-491-7198</a>
-            </div>
-          </div>
-
-          <div class="gmail-row row">
-            <div class="menu-gmail col">
-              <img src="../images/email_logo_menu.svg" alt="letter image">
-              <a href='#'>sarah.rhoad@gmail.com</a>
-            </div>
-          </div>
-
-          <div class="linkedin-row row">
-            <div class="menu-linkedin col">
-              <img src="../images/linkedin_logo_menu.svg" alt="LinkedIn Logo">
-              <a href='https://linkedin.com/in/sarahrhoad' target="_blank">linkedin.com/in/sarahrhoad</a>
-            </div>
-          </div>
-
-          <div class="github-row row">
-            <div class="menu-github col">
-              <img src="../images/github_logo_menu.svg" alt="GitHub Logo">
-              <a href='https://github.com/sarahrhoad/projects' target="blank">github.com/sarahrhoad/projects</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </nav>
 
     <div id="content">
@@ -109,13 +80,12 @@
         <div class="container-fluid">
           <button type="button" id="sidebarCollapse">
             <i class="hamburger-menu"></i>
-            <span>&#9776;</span>
+            <span id="hamburger">&#9776;</span>
           </button>
         </div>
       </nav>
     </div>
   </div>
-
 
   <!-- jQuery CDN - Slim version (=without AJAX) -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -127,12 +97,19 @@
   <script type="text/javascript">
     $(document).ready(function() {
 
-      $('#sidebarCollapse').on('click', function() {
-        $('#sidebar').toggleClass('active');
+      $('#sidebarCollapse').on('click', function(e) {
+        e.stopPropagation();
+        $('#sidebar-menu').toggleClass('active');
+        $('#content').click(function(e) {
+          if ($('#sidebar-menu').hasClass('active')) {
+            $("#sidebar-menu").toggleClass('active')
+          }
+        })
       });
 
     });
   </script>
+
 
 </body>
 
