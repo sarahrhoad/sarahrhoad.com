@@ -87,6 +87,74 @@
     </div>
   </div>
 
+  <div class="container" id="about-sarah-section">
+    <div class="three-dots">
+      <img src="../images/three_dots.svg" alt="Three green dots">
+    </div>
+    <div id="about-sarah-paragraph-one">
+      <p>
+        I was first introduced to front-end web development while using WordPress. Seeing the changes happen instantaneously to a website made me realize I have a true joy and passion for it.
+      </p>
+    </div>
+    <div id="about-sarah-paragraph-two">
+      <p>
+        I have experience within multiple areas in software development. Continuing to gain valuable skills which I apply to each new position. I welcome new challenges, and I am always trying to push myself to grow by continuing to learn new skills
+        through courses, tutorials, mentors, etc.
+      </p>
+    </div>
+    <div id="about-sarah-paragraph-three">
+      <p>
+        This website displays some of my portfolio pieces.
+      </p>
+    </div>
+    <div id="about-sarah-paragraph-four">
+      <p>
+        I am currently seeking a Front-End Web Developer position.
+      </p>
+    </div>
+    <div id="sarah-signature">
+      <img src="../images/signature_about.svg" alt="Sarah Rhoad">
+    </div>
+  </div>
+
+  <div class="container" id="portfolio-homepage">
+    <div class="header-title">
+      <p>Portfolio</p>
+    </div>
+    <div class="green-line-headers">
+      <img src="../images/green_line_separator.svg" alt="Green line">
+    </div>
+    <div class="row">
+      <div class="portfolio-column column">
+        <p>Amazon <br>Music</p>
+        <p>Social <br>Media</p>
+        <p>Coupon <br>Popup</p>
+        <p>Newsletter<br>Signup</p>
+        <p>Sign In <br>Page</p>
+      </div>
+    </div>
+    <div class="three-dots">
+      <img src="../images/three_dots.svg" alt="Three green dots">
+    </div>
+  </div>
+
+  <div class="contact-footer container">
+    <div class="header-title">
+      <p>Contact</p>
+    </div>
+    <div class="green-line-headers">
+      <img src="../images/green_line_separator.svg" alt="Green line">
+    </div>
+    <div class="small-swish">
+      <img src="../images/small_swish.svg" alt="Light purple swish">
+    </div>
+    <div class="large-swish">
+      <img src="../images/large_swish.svg" alt="Light purple swish">
+    </div>
+  </div>
+
+
+
   <!-- jQuery CDN - Slim version (=without AJAX) -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <!-- Popper.JS -->
@@ -100,7 +168,7 @@
       $('#sidebarCollapse').on('click', function(e) {
         e.stopPropagation();
         $('#sidebar-menu').toggleClass('active');
-        $('#content').click(function(e) {
+        $('body').click(function(e) {
           if ($('#sidebar-menu').hasClass('active')) {
             $("#sidebar-menu").toggleClass('active')
           }
