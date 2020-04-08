@@ -122,6 +122,32 @@ a[data-toggle="collapse"] {
   transform: translateY(-31%);
 }
 
+.portfolio-section-headers p {
+  margin: 0 0 50px 0;
+  font-family: RobotoCondensed-Bold;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.portfolio-section-information p {
+  font-family: RobotoCondensed-Regular;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.source-code a {
+  padding: 5px;
+  font-family: RobotoCondensed-Bold;
+  font-size: 24px;
+  color: #3E1C49;
+  border: 6px solid #3E1C49;
+  text-decoration: none;
+}
+
+.source-code a:hover {
+  color: #1FBBA6;
+}
+
 #content {
   padding: 20px;
   min-height: 100vh;
@@ -339,4 +365,8 @@ a[data-toggle="collapse"] {
   margin: 100px 0 50px 0;
   font-family: RobotoCondensed-Italic;
   font-size: 12px;
+}
+
+#amazon-music-header {
+  margin: ;
 }

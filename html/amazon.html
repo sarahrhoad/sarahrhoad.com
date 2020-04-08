@@ -5,10 +5,74 @@
 
   <title>sarah.rhoad.com/portfolio-amazon</title>
 
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
   <link rel="stylesheet" type="text/css" href="../css/main.css">
+
+  <!-- Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
+  <div class="container" id="amazon-copy-initial">
+    <div class="header-title container" id="amazon-music-header">
+      Amazon Music
+    </div>
+
+    <div class="green-line-headers">
+      <img src="../images/green_line_separator.svg" alt="green line">
+    </div>
+    <div class="portfolio-section-headers">
+      <p>The Initial Process</p>
+    </div>
+    <div class="container portfolio-section-information">
+      <p>My design mentor advised me to find small media ads to copy the design of and then develop on the web.</p>
+      <p>For my first media source I copied an Amazon banner ad. I created all of the color overlays, as well as the Amazon logo.</p>
+
+      <img src="../images/amazon_initial_process.jpg" alt="picture of amazon shopping page">
+    </div>
+
+    <div class="portfolio-section-headers">
+      <p>The Final Draft</p>
+    </div>
+
+    <div class="portfolio-section-information">
+      <p>Two challenges I found when designing this ad were to try and match the various color splotches and the Amazon logo as accurately as possible.</p>
+
+      <img src="../images/amazon_copy_final_draft.jpg" alt="image of amazon music ad">
+    </div>
+  </div>
+
+  <div class="source-code">
+    <a href="#">Source Code</a>
+  </div>
+
+
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      $('#sidebarCollapse').on('click', function(e) {
+        e.stopPropagation();
+        $('#sidebar-menu').toggleClass('active');
+        $('body').click(function(e) {
+          if ($('#sidebar-menu').hasClass('active')) {
+            $("#sidebar-menu").toggleClass('active')
+          }
+        })
+      });
+
+    });
+  </script>
 
 </body>
 
