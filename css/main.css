@@ -109,17 +109,17 @@ a[data-toggle="collapse"] {
 }
 
 .small-swish {
-  left: 0;
-  position: absolute;
-  transform: translateY(-65%);
+  position: relative;
+  top: 20px;
+  z-index: -1;
 }
 
-.large-swish img {
-  right: 0;
-  position: absolute;
+.large-swish {
+  position: relative;
+  margin-bottom: -246px;
+  bottom: 246px;
   z-index: -1;
   float: right;
-  transform: translateY(-31%);
 }
 
 .portfolio-section-headers p {
@@ -283,6 +283,12 @@ a[data-toggle="collapse"] {
   text-align: center;
 }
 
+#about-sarah-section,
+#portfolio-homepage,
+.contact-footer {
+  padding: 0 24px;
+}
+
 #about-sarah-section {
   font-family: RobotoCondensed-Regular;
   font-size: 18px;
@@ -369,4 +375,17 @@ a[data-toggle="collapse"] {
 
 #amazon-music-header {
   margin: ;
+}
+
+@media (orientation: portrait) and (max-width: 400px) {
+  #footer-contact a {
+    font-size: 18px;
+  }
+
+  #footer-phone-number img,
+  #footer-gmail img,
+  #footer-linkedin img,
+  #footer-github img {
+    height: 32px;
+  }
 }
