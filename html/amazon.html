@@ -3,6 +3,9 @@
 
 <head>
 
+  <meta name="viewport" charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
   <title>sarah.rhoad.com/portfolio-amazon</title>
 
   <!-- Bootstrap CSS CDN -->
@@ -23,16 +26,16 @@
       <div id="scrollable-menu-content">
         <ul class="menu-items components">
           <li class="menu-option">
-            <a href="#">Home</a>
+            <a href="index.html#landing-page">Home</a>
           </li>
           <li class="menu-option">
-            <a href="#about-sarah-section">About</a>
+            <a href="index.html#about-sarah-paragraph-one">About</a>
           </li>
           <li class="menu-option">
-            <a href="#html/index.html">Portfolio</a>
+            <a href="index.html#portfolio-homepage">Portfolio</a>
           </li>
           <li class="menu-option">
-            <a href="#footer-contact">Resume</a>
+            <a href="#footer">Resume</a>
           </li>
           <li class="menu-option" id="menu-green-line">
             <img src="../images/green_line_separator.svg" alt="green line">
@@ -63,16 +66,7 @@
       </div>
     </nav>
 
-    <div id="content">
-      <nav class="navbar">
-        <div class="container-fluid">
-          <button type="button" id="sidebarCollapse">
-            <i class="hamburger-menu"></i>
-            <span id="hamburger">&#9776;</span>
-          </button>
-        </div>
-      </nav>
-    </div>
+    <div id="hamburger">&#9776;</div>
   </div>
 
   <div class="container" id="amazon-copy-initial">
@@ -148,15 +142,13 @@
     <div class="source-code">
       <a href="#">Source Code</a>
     </div>
+  </div>
 
+  <div class="three-dots">
+    <img src="../images/three_dots.svg" alt="Three green dots">
   </div>
 
   <div class="footer">
-
-    <div class="three-dots">
-      <img src="../images/three_dots.svg" alt="Three green dots">
-    </div>
-
     <div class="small-swish">
       <img src="../images/small_swish_2.svg" alt="Light purple swish">
     </div>
@@ -215,7 +207,7 @@
   <script type="text/javascript">
     $(document).ready(function() {
 
-      $('#sidebarCollapse').on('click', function(e) {
+      $('#hamburger').on('click', function(e) {
         e.stopPropagation();
         $('#sidebar-menu').toggleClass('active');
         $('body').click(function(e) {

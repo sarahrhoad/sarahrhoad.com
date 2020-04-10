@@ -68,10 +68,6 @@ a[data-toggle="collapse"] {
   padding-bottom: 30px;
 }
 
-.navbar {
-  position: static;
-}
-
 .three-dots {
   padding: 100px 0 270px 0;
   text-align: center;
@@ -175,13 +171,6 @@ a[data-toggle="collapse"] {
   margin-bottom: 50px;
 }
 
-#content {
-  padding: 20px;
-  min-height: 100vh;
-  width: 100%;
-  transition: all 0.5s;
-}
-
 #scrollable-menu-content {
   position: absolute;
   overflow-y: auto;
@@ -258,17 +247,13 @@ a[data-toggle="collapse"] {
   vertical-align: middle;
 }
 
-#sidebarCollapse {
-  background-color: unset;
-  border: none;
-  outline: 0;
-}
-
 #hamburger {
   position: fixed;
-  right: 30px;
+  top: 30px;
+  right: 41px;
   color: #1FBBA6;
   font-size: 30px;
+  cursor: pointer;
 }
 
 #landing-page {
@@ -312,6 +297,8 @@ a[data-toggle="collapse"] {
 
 #about-sarah-section,
 #portfolio-homepage,
+#amazon-copy-initial,
+#amazon-redesign,
 .contact-footer {
   padding: 0 24px;
 }
