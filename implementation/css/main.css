@@ -70,6 +70,13 @@ a[data-toggle="collapse"] {
 
 .three-dots {
   padding: 180px 0;
+  clear: both;
+  text-align: center;
+}
+
+.three-dots-footer {
+  padding-top: 180px;
+  clear: both;
   text-align: center;
 }
 
@@ -82,7 +89,8 @@ a[data-toggle="collapse"] {
 }
 
 .page-title {
-  margin: 100px 0 0 100px;
+  margin: 0;
+  padding: 100px 0 0 100px;
   font-family: Kalam-Bold;
   font-size: 40px;
   color: #474747;
@@ -90,6 +98,9 @@ a[data-toggle="collapse"] {
 
 .green-line-headers {
   margin-bottom: 100px;
+  height: 2px;
+  width: 100px;
+  background: #1FBBA6;
 }
 
 .portfolio-column {
@@ -116,6 +127,7 @@ a[data-toggle="collapse"] {
 
 .small-swish {
   position: relative;
+  clear: both;
   top: 65px;
   z-index: -1;
 }
@@ -128,20 +140,14 @@ a[data-toggle="collapse"] {
   float: right;
 }
 
+.footer,
 #about-sarah-section,
-#portfolio-homepage,
-#amazon-page,
-#amazon-redesign,
-.footer {
-  padding: 0 24px;
+#portfolio-homepage {
+  padding: 0 100px;
 }
 
 .footer {
   padding-top: 46px;
-}
-
-.footer, #portfolio-homepage {
-  margin: auto 100px;
 }
 
 .section-header-top-margin {
@@ -189,7 +195,7 @@ a[data-toggle="collapse"] {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  overflow: hidden
+  overflow: hidden;
 }
 
 .img-show img {
@@ -200,22 +206,21 @@ a[data-toggle="collapse"] {
   left: 0;
 }
 
-.portfolio-pages-imaging img {
-  max-width: 100%;
-}
-
 .portfolio-section-headers p {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   font-family: RobotoCondensed-Bold;
   font-size: 20px;
   letter-spacing: 1px;
   text-align: center;
 }
 
-.section-information {
-  margin-top: 60px;
-  display: block;
+.section-wrapper {
+  float: left;
   align-items: center;
+}
+
+.section-information {
+  float: left;
 }
 
 .section-information p {
@@ -268,7 +273,9 @@ a[data-toggle="collapse"] {
 }
 
 #menu-green-line {
-  padding: 15px 0 50px 0;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
 }
 
 #menu-contact a,
@@ -448,6 +455,14 @@ a[data-toggle="collapse"] {
   margin: 100px 0 50px 0;
   font-family: RobotoCondensed-Italic;
   font-size: 12px;
+}
+
+#initial-process,
+#amazon-copy,
+#amazon-redesign,
+#amazon-redesign-final {
+  margin: 0 auto;
+  width: 60%;
 }
 
 @media (orientation: portrait) and (max-width: 400px) {
