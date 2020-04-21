@@ -168,8 +168,7 @@ a[data-toggle="collapse"] {
 }
 
 .popup img {
-  width: 359px;
-  height: 250px;
+  width: 100%;
   cursor: pointer
 }
 
@@ -192,8 +191,8 @@ a[data-toggle="collapse"] {
 }
 
 .show .img-show {
-  width: 600px;
-  height: 600px;
+  width: 90%;
+  height: 90%;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -225,10 +224,11 @@ a[data-toggle="collapse"] {
 
 .source-code {
   margin-top: 50px;
+  padding-left: 40px;
 }
 
 .verbiage {
-  padding-top: 40px;
+  padding: 100px 0 0 40px;
 }
 
 .source-code a {
@@ -448,13 +448,6 @@ a[data-toggle="collapse"] {
   font-family: RobotoCondensed-Italic;
   font-size: 12px;
 }
-
-/* #initial-process,
-#amazon-copy,
-#amazon-redesign,
-#amazon-redesign-final {
-  margin: 0 auto;
-} */
 
 @media (orientation: portrait) and (max-width: 400px) {
   #footer-contact a {
