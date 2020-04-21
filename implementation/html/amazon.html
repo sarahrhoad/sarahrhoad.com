@@ -149,12 +149,12 @@
     <div class="container section-wrapper">
       <div class="row">
         <div class="col-xl-6 popup">
-          <img src="../images/amazon_four_iterations_final.png" alt="first four iterations of amazon music banner ad redesign">
+          <img src="../images/amazon_four_iterations_final3.png" alt="first four iterations of amazon music banner ad redesign">
         </div>
         <div class="show">
           <div class="overlay"></div>
           <div class="img-show">
-            <img src="../images/amazon_four_iterations_final.png" alt="first four iterations of amazon music banner ad redesign">
+            <img src="../images/amazon_four_iterations_final3.png" alt="first four iterations of amazon music banner ad redesign">
           </div>
         </div>
 
@@ -184,6 +184,7 @@
         </div>
         <div class="show">
           <div class="overlay"></div>
+          <div class="close-button">&times</div>
           <div class="img-show">
             <img src="../images/amazon_ipad_vertical_add_final.png" alt="final draft of amazon music banner ad redesign">
           </div>
@@ -263,14 +264,13 @@
         var $src = $(this).attr("src");
         $(".show").toggleClass('active');
         $(".img-show img").attr("src", $src);
-        console.log("here")
+        $('body').css('overflow', 'hidden');
       });
 
-      $(".overlay").click(function() {
+      $(".close-button").click(function() {
         $(".show").toggleClass('active');
-        console.log("there")
+        $('body').css('overflow', 'auto');
       });
-
     });
   </script>
 

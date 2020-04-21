@@ -191,8 +191,8 @@ a[data-toggle="collapse"] {
 }
 
 .show .img-show {
-  width: 90%;
-  height: 90%;
+  width: 60%;
+  height: 100%;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -206,6 +206,20 @@ a[data-toggle="collapse"] {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.close-button {
+  position: fixed;
+  color: black;
+  right: 50px;
+  top: 10px;
+  font-size: 50px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.close-button:hover {
+  opacity: 1;
 }
 
 .portfolio-section-headers p {
@@ -449,6 +463,12 @@ a[data-toggle="collapse"] {
   font-size: 12px;
 }
 
+/* #initial-process,
+#amazon-copy,
+#amazon-redesign,
+#amazon-redesign-final {
+  margin: 0 auto;
+} */
 @media (orientation: portrait) and (max-width: 400px) {
   #footer-contact a {
     font-size: 18px;
