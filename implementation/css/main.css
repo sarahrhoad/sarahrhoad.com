@@ -88,14 +88,6 @@ a[data-toggle="collapse"] {
   color: #474747;
 }
 
-.page-title {
-  margin: 0;
-  padding: 100px 0 0 100px;
-  font-family: Kalam-Bold;
-  font-size: 40px;
-  color: #474747;
-}
-
 .green-line-headers {
   margin-bottom: 100px;
   height: 2px;
@@ -148,6 +140,7 @@ a[data-toggle="collapse"] {
 }
 
 .footer,
+.page-title,
 #about-sarah-section,
 #portfolio-homepage {
   padding: 0 100px;
@@ -155,6 +148,14 @@ a[data-toggle="collapse"] {
 
 .footer {
   padding-top: 46px;
+}
+
+.page-title {
+  margin: 0;
+  padding-top: 100px;
+  font-family: Kalam-Bold;
+  font-size: 40px;
+  color: #474747;
 }
 
 .section-header-top-margin {
@@ -191,7 +192,7 @@ a[data-toggle="collapse"] {
 }
 
 .show .img-show {
-  width: 60%;
+  width: 90%;
   height: 100%;
   position: fixed;
   top: 50%;
@@ -201,19 +202,19 @@ a[data-toggle="collapse"] {
 }
 
 .img-show img {
-  width: 100%;
+  width: 90%;
   height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
 }
 
 .close-button {
+  width: 40px;
   position: fixed;
-  color: black;
-  right: 50px;
-  top: 10px;
-  font-size: 50px;
+  right: 30px;
+  top: 30px;
   cursor: pointer;
   opacity: 0.5;
 }
@@ -332,10 +333,8 @@ a[data-toggle="collapse"] {
 
 #hamburger {
   position: fixed;
-  top: 30px;
-  right: 41px;
-  color: #1FBBA6;
-  font-size: 30px;
+  top: 40px;
+  right: 40px;
   cursor: pointer;
 }
 
@@ -469,7 +468,32 @@ a[data-toggle="collapse"] {
 #amazon-redesign-final {
   margin: 0 auto;
 } */
-@media (orientation: portrait) and (max-width: 400px) {
+@media (orientation: portrait) and (max-width: 450px) {
+  #hamburger {
+    top: 20px;
+    right: 30px;
+  }
+
+  .footer,
+  .page-title,
+  #about-sarah-section,
+  #portfolio-homepage {
+    padding: 0 36px;
+  }
+
+  .page-title {
+    padding-top: 100px;
+  }
+
+  .verbiage {
+    padding: 0;
+    padding-top: 100px;
+  }
+
+  .source-code {
+    padding-left: 0;
+  }
+
   #footer-contact a {
     font-size: 18px;
   }
@@ -479,5 +503,18 @@ a[data-toggle="collapse"] {
   #footer-linkedin img,
   #footer-github img {
     height: 32px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 850px) {
+  .footer,
+  .page-title,
+  #about-sarah-section,
+  #portfolio-homepage {
+    padding: 0 36px;
+  }
+
+  .page-title {
+    padding-top: 100px;
   }
 }
