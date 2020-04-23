@@ -169,7 +169,7 @@ a[data-toggle="collapse"] {
 }
 
 .popup img {
-  width: 100%;
+  max-width: 80%;
   cursor: pointer
 }
 
@@ -226,7 +226,7 @@ a[data-toggle="collapse"] {
 .portfolio-section-headers p {
   margin-bottom: 100px;
   font-family: RobotoCondensed-Bold;
-  font-size: 20px;
+  font-size: 24px;
   letter-spacing: 1px;
   text-align: center;
 }
@@ -237,13 +237,12 @@ a[data-toggle="collapse"] {
   letter-spacing: 1px;
 }
 
-.source-code {
-  margin-top: 50px;
-  padding-left: 40px;
+.section-information {
+  align-self: center;
 }
 
-.verbiage {
-  padding: 100px 0 0 40px;
+.source-code {
+  margin-top: 50px;
 }
 
 .source-code a {
@@ -270,8 +269,8 @@ a[data-toggle="collapse"] {
 #sidebar-menu {
   margin-right: -375px;
   padding: 0;
-  min-width: 374px;
-  max-width: 374px;
+  min-width: 375px;
+  max-width: 375px;
   min-height: 100vh;
   right: 0;
   z-index: 1;
@@ -462,16 +461,11 @@ a[data-toggle="collapse"] {
   font-size: 12px;
 }
 
-/* #initial-process,
-#amazon-copy,
-#amazon-redesign,
-#amazon-redesign-final {
-  margin: 0 auto;
-} */
 @media (orientation: portrait) and (max-width: 450px) {
   #hamburger {
-    top: 20px;
-    right: 30px;
+    top: 32px;
+    right: 32px;
+    width: 24px;
   }
 
   .footer,
@@ -479,19 +473,6 @@ a[data-toggle="collapse"] {
   #about-sarah-section,
   #portfolio-homepage {
     padding: 0 36px;
-  }
-
-  .page-title {
-    padding-top: 100px;
-  }
-
-  .verbiage {
-    padding: 0;
-    padding-top: 100px;
-  }
-
-  .source-code {
-    padding-left: 0;
   }
 
   #footer-contact a {
@@ -506,7 +487,28 @@ a[data-toggle="collapse"] {
   }
 }
 
+@media (orientation: portrait) and (max-width: 1000px) {
+  .verbiage {
+    padding: 50px 50px 0;
+    text-align: center;
+  }
+
+  .source-code {
+    text-align: center;
+  }
+}
+
 @media (orientation: landscape) and (max-width: 850px) {
+  #hamburger {
+    top: 32px;
+    right: 32px;
+    width: 24px;
+  }
+
+  .popup img {
+    max-width: 80%;
+  }
+
   .footer,
   .page-title,
   #about-sarah-section,
@@ -516,5 +518,16 @@ a[data-toggle="collapse"] {
 
   .page-title {
     padding-top: 100px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1000px) {
+  .verbiage {
+    padding: 50px 50px 0;
+    text-align: center;
+  }
+
+  .source-code {
+    text-align: center;
   }
 }
