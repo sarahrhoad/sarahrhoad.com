@@ -90,7 +90,7 @@ a[data-toggle="collapse"] {
 
 .green-line-headers {
   margin-bottom: 100px;
-  height: 2px;
+  height: 3px;
   width: 100px;
   background: #1FBBA6;
 }
@@ -115,47 +115,35 @@ a[data-toggle="collapse"] {
   font-family: RobotoCondensed-Bold;
   font-size: 24px;
   color: #3E1C49;
-  border: 6px solid #3E1C49;
+  border: 4px solid #3E1C49;
   display: inline-block;
   text-decoration: none;
 }
 
 .portfolio-column a:hover {
   color: #1FBBA6;
+  border: 4px solid #1FBBA6;
 }
 
 .small-swish {
   position: relative;
   clear: both;
   top: 65px;
+  right: 36px;
   z-index: -1;
 }
 
 .large-swish {
   position: relative;
-  margin-bottom: -246px;
-  bottom: 246px;
+  margin-bottom: -210px;
+  bottom: 210px;
+  left: 36px;
   z-index: -1;
   float: right;
 }
 
-.footer,
-.page-title,
-#about-sarah-section,
-#portfolio-homepage {
-  padding: 0 100px;
-}
-
 .footer {
   padding-top: 46px;
-}
-
-.page-title {
-  margin: 0;
-  padding-top: 100px;
-  font-family: Kalam-Bold;
-  font-size: 40px;
-  color: #474747;
 }
 
 .section-header-top-margin {
@@ -213,10 +201,11 @@ a[data-toggle="collapse"] {
 .close-button {
   width: 40px;
   position: fixed;
-  right: 30px;
-  top: 30px;
+  right: 32px;
+  top: 32px;
   cursor: pointer;
   opacity: 0.5;
+  z-index: 1;
 }
 
 .close-button:hover {
@@ -250,12 +239,17 @@ a[data-toggle="collapse"] {
   font-family: RobotoCondensed-Bold;
   font-size: 20px;
   color: #3E1C49;
-  border: 3px solid #3E1C49;
+  border: 2.5px solid #3E1C49;
   text-decoration: none;
 }
 
 .source-code a:hover {
   color: #1FBBA6;
+  border: 4px solid #1FBBA6;
+}
+
+#page-container {
+  padding: 36px;
 }
 
 #scrollable-menu-content {
@@ -313,6 +307,10 @@ a[data-toggle="collapse"] {
   color: #1FBBA6;
 }
 
+#menu-contact-information img {
+  width: 32px;
+}
+
 #menu-phone-number a:hover,
 #menu-gmail a:hover {
   color: #fdfdfd;
@@ -330,10 +328,19 @@ a[data-toggle="collapse"] {
   vertical-align: middle;
 }
 
+#resume-download {
+  padding: 60px 0 30px 0;
+}
+
+#resume-download a {
+  font-size: 18px;
+}
+
 #hamburger {
+  width: 26px;
   position: fixed;
-  top: 40px;
-  right: 40px;
+  top: 36px;
+  right: 36px;
   cursor: pointer;
 }
 
@@ -444,7 +451,7 @@ a[data-toggle="collapse"] {
 
 #resume-link a {
   margin: 100px 0 50px 0;
-  font-family: RobotoCondensed-Bold;
+  font-family: RobotoCondensed-BoldItalic;
   font-size: 20px;
   color: #474747;
   letter-spacing: 1px;
@@ -461,18 +468,26 @@ a[data-toggle="collapse"] {
   font-size: 12px;
 }
 
+#amazon-page-header {
+  padding: 21px 15px 0px;
+  font-family: Kalam-Bold;
+  font-size: 40px;
+  color: #474747;
+}
+
 @media (orientation: portrait) and (max-width: 450px) {
-  #hamburger {
-    top: 32px;
-    right: 32px;
-    width: 24px;
+  .header-title {
+    font-size: 35px;
   }
 
-  .footer,
-  .page-title,
-  #about-sarah-section,
-  #portfolio-homepage {
-    padding: 0 36px;
+  #amazon-page-header {
+    padding: 0;
+    font-size: 35px;
+  }
+
+  #hamburger {
+    top: 46px;
+    width: 24px;
   }
 
   #footer-contact a {
@@ -499,25 +514,22 @@ a[data-toggle="collapse"] {
 }
 
 @media (orientation: landscape) and (max-width: 850px) {
+  .header-title {
+    font-size: 35px;
+  }
+
+  #amazon-page-header {
+    padding: 0;
+    font-size: 35px;
+  }
+
   #hamburger {
-    top: 32px;
-    right: 32px;
+    top: 46px;
     width: 24px;
   }
 
   .popup img {
     max-width: 80%;
-  }
-
-  .footer,
-  .page-title,
-  #about-sarah-section,
-  #portfolio-homepage {
-    padding: 0 36px;
-  }
-
-  .page-title {
-    padding-top: 100px;
   }
 }
 
