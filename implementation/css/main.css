@@ -410,9 +410,9 @@ a[data-toggle="collapse"] {
   max-width: 100%;
 }
 
-#footer-contact {
+/* #footer-contact {
   padding: 0;
-}
+} */
 
 #footer-contact a {
   font-family: RobotoCondensed-Italic;
@@ -480,6 +480,10 @@ a[data-toggle="collapse"] {
     font-size: 35px;
   }
 
+  .footer {
+    padding: 46px 0 0 0;
+  }
+
   #amazon-page-header {
     padding: 0;
     font-size: 35px;
@@ -518,6 +522,14 @@ a[data-toggle="collapse"] {
     font-size: 35px;
   }
 
+  .footer {
+    padding: 46px 0 0 0;
+  }
+
+  .popup img {
+    max-width: 80%;
+  }
+
   #amazon-page-header {
     padding: 0;
     font-size: 35px;
@@ -526,10 +538,6 @@ a[data-toggle="collapse"] {
   #hamburger {
     top: 46px;
     width: 24px;
-  }
-
-  .popup img {
-    max-width: 80%;
   }
 }
 
