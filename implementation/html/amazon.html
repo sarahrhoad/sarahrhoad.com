@@ -214,7 +214,7 @@
       <img src="../images/small_swish_2.svg" alt="Light purple swish">
     </div>
 
-    <div class="footer container-fluid" id="menu-contact-jump">
+    <div class="footer-container container-fluid" id="menu-contact-jump">
       <div class="section-header-title">
         <p>Contact</p>
       </div>
@@ -285,10 +285,10 @@
 
       $('#hamburger').on('click', function(e) {
         e.stopPropagation();
-        $('#sidebar-menu').toggleClass('active');
+        $('#popout-nav').toggleClass('active');
         $('body').click(function(e) {
-          if ($('#sidebar-menu').hasClass('active')) {
-            $("#sidebar-menu").toggleClass('active')
+          if ($('#popout-nav').hasClass('active')) {
+            $("#popout-nav").toggleClass('active')
           }
         })
       });

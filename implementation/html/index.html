@@ -194,10 +194,10 @@
 
       $('#hamburger').on('click', function(e) {
         e.stopPropagation();
-        $('#sidebar-menu').toggleClass('active');
+        $('#popout-nav').toggleClass('active');
         $('body').click(function(e) {
-          if ($('#sidebar-menu').hasClass('active')) {
-            $("#sidebar-menu").toggleClass('active')
+          if ($('#popout-nav').hasClass('active')) {
+            $("#popout-nav").toggleClass('active')
           }
         })
       });
