@@ -212,7 +212,7 @@ a[data-toggle="collapse"] {
   opacity: 1;
 }
 
-.amazon-section-header p {
+.section-header p {
   margin-bottom: 100px;
   font-family: RobotoCondensed-Bold;
   font-size: 24px;
@@ -473,7 +473,7 @@ a[data-toggle="collapse"] {
   font-size: 12px;
 }
 
-#amazon-page-header {
+#page-header {
   padding: 21px 15px 0px;
   font-family: Kalam-Bold;
   font-size: 40px;
@@ -489,7 +489,7 @@ a[data-toggle="collapse"] {
     padding: 46px 0 0;
   }
 
-  #amazon-page-header {
+  #page-header {
     padding: 0;
     font-size: 35px;
   }
@@ -539,7 +539,7 @@ a[data-toggle="collapse"] {
     max-width: 80%;
   }
 
-  #amazon-page-header {
+  #page-header {
     padding: 0;
     font-size: 35px;
   }
