@@ -245,7 +245,7 @@ a[data-toggle="collapse"] {
 
 .source-code a:hover {
   color: #1FBBA6;
-  border: 4px solid #1FBBA6;
+  border: 2.5px solid #1FBBA6;
 }
 
 #about-sarah-paragraph-one p,
@@ -427,10 +427,6 @@ a[data-toggle="collapse"] {
 #footer-contact a:hover {
   color: #000;
 }
-
-/* ul#footer-contact {
-  padding-left: 36px;
-} */
 
 #footer-contact li {
   list-style-type: none;
