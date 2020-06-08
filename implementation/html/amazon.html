@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
   <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/fonts.css">
 
   <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
@@ -29,55 +30,59 @@
     <div class="menu-wrapper">
       <nav id="popout-nav">
         <div id="scrollable-menu-content">
-          <ul class="menu-items components">
-            <li class="menu-option">
+          <div class="menu-items components">
+            <div class="menu-option">
               <a href="index.html#landing-page">Home</a>
-            </li>
-            <li class="menu-option">
+            </div>
+            <div class="menu-option">
               <a href="index.html#about-sarah-paragraph-one">About</a>
-            </li>
-            <li class="menu-option">
+            </div>
+            <div class="menu-option">
               <a href="index.html#portfolio-homepage">Portfolio</a>
-            </li>
-            <li class="menu-option">
+            </div>
+            <div class="menu-option">
               <div class="menu-green-line"></div>
-            </li>
-            <li class="menu-option" id="menu-contact">
-              <a href="">Contact</a>
-            </li>
-          </ul>
+            </div>
+            <div class="menu-option" id="menu-contact">
+              <a href="#">Contact</a>
+            </div>
+          </div>
 
-          <ul id="menu-contact-information">
-            <li id="menu-phone-number">
-              <img src="../images/phone_logo_menu.svg" alt="phone image">
+          <div id="menu-contact-information">
+            <div id="menu-phone-number">
+              <img src="../images/phone_logo_menu.svg" alt="phone image" />
               <a href='#'>507-491-7198</a>
-            </li>
-            <li id="menu-gmail">
-              <img src="../images/email_logo_menu.svg" alt="letter image">
+            </div>
+            <div id="menu-gmail">
+              <img src="../images/email_logo_menu.svg" alt="letter image" />
               <a href='#'>sarah.rhoad@gmail.com</a>
-            </li>
-            <li id="menu-linkedin">
-              <img src="../images/linkedin_logo_menu.svg" alt="LinkedIn Logo">
-              <a href='https://linkedin.com/in/sarahrhoad' target="_blank">linkedin.com/in/sarahrhoad</a>
-            </li>
-            <li id="menu-github">
-              <img src="../images/github_logo_menu.svg" alt="GitHub Logo">
-              <a href='https://github.com/sarahrhoad/projects' target="_blank">github.com/sarahrhoad/projects</a>
-            </li>
-            <li id="resume-download">
+            </div>
+            <div>
+              <a id="menu-linkedin" href='https://linkedin.com/in/sarahrhoad' target="_blank">
+                <div class="menu-logo-hover"></div>
+                <p>linkedin.com/in/sarahrhoad</p>
+              </a>
+            </div>
+            <div>
+              <a id="menu-github" href='https://github.com/sarahrhoad/projects' target="_blank">
+                <div class="menu-logo-hover"></div>
+                <p>github.com/sarahrhoad/projects</p>
+              </a>
+            </div>
+            <div id="resume-download">
               <a href="../media/sarahrhoad_resume.pdf" target="_blank">Download Sarah's Resume HERE</a>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </nav>
 
-      <div>
-        <img id="hamburger" src="../images/hamburger_menu_final.svg" alt="menu button">
+      <div id="hamburger">
+        <div id="hamburger-hover-state"></div>
       </div>
     </div>
 
     <div id="page-header">
-      <p>Amazon Music</p>
+      <p>Amazon Music Banner Ad</p>
 
       <div class="section-header-green-line"></div>
     </div>
@@ -92,12 +97,6 @@
         <div class="row">
           <div class="col-lg section-image">
             <img src="../images/amazon_original_macbook_final.png">
-          </div>
-          <div class="show">
-            <div class="overlay"></div>
-            <div class="img-show">
-              <img src="../images/amazon_original_macbook_final.png">
-            </div>
           </div>
 
           <div class="col-lg col-md-12 section-information">
@@ -128,12 +127,6 @@
           <div class="col-lg section-image">
             <img src="../images/amazon_redesign_macbook_final.png">
           </div>
-          <div class="show">
-            <div class="overlay"></div>
-            <div class="img-show">
-              <img src="../images/amazon_redesign_macbook_final.png">
-            </div>
-          </div>
 
           <div class="col-lg col-md-12 section-information">
             <div class="verbiage">
@@ -160,12 +153,6 @@
         <div class="row">
           <div class="col-lg section-image">
             <img src="../images/four_iterations_final.png" alt="first four iterations of amazon music banner ad redesign">
-          </div>
-          <div class="show">
-            <div class="overlay"></div>
-            <div class="img-show">
-              <img src="../images/four_iterations_final.png" alt="first four iterations of amazon music banner ad redesign">
-            </div>
           </div>
 
           <div class="col-lg col-md-12 section-information">
@@ -228,24 +215,28 @@
       </div>
       <div class="section-header-green-line"></div>
 
-      <ul id="footer-contact">
-        <li id="footer-phone-number">
+      <div id="footer-contact">
+        <div id="footer-phone-number">
           <img src="../images/phone_logo_footer.svg" alt="phone image">
-          <a href='#'>507-491-7198</a>
-        </li>
-        <li id="footer-gmail">
+          <p>507-491-7198</p>
+        </div>
+        <div id="footer-gmail">
           <img src="../images/email_logo_footer.svg" alt="letter image">
-          <a href='#'>sarah.rhoad@gmail.com</a>
-        </li>
-        <li id="footer-linkedin">
-          <img src="../images/linkedin_logo_footer.svg" alt="LinkedIn Logo">
-          <a href='https://linkedin.com/in/sarahrhoad' target="_blank">linkedin.com/in/sarahrhoad</a>
-        </li>
-        <li id="footer-github">
-          <img src="../images/github_logo_footer.svg" alt="GitHub Logo">
-          <a href='https://github.com/sarahrhoad/projects' target="_blank">github.com/sarahrhoad/projects</a>
-        </li>
-      </ul>
+          <p>sarah.rhoad@gmail.com</p>
+        </div>
+        <div>
+          <a id="footer-linkedin" href='https://linkedin.com/in/sarahrhoad' target="_blank">
+            <div class="footer-logo-hover"></div>
+            <p>linkedin.com/in/sarahrhoad</p>
+          </a>
+        </div>
+        <div>
+          <a id="footer-github" href='https://github.com/sarahrhoad/projects' target="_blank">
+            <div class="footer-logo-hover"></div>
+            <p>github.com/sarahrhoad/projects</p>
+          </a>
+        </div>
+      </div>
 
       <div id="resume-link">
         <a href="../media/sarahrhoad_resume.pdf" target="_blank">Download Sarah's Resume HERE</a>

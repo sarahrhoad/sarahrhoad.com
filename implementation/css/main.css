@@ -1,37 +1,4 @@
-@font-face {
-  font-family: Great_Vibes;
-  src: url(../fonts/Great_Vibes/GreatVibes-Regular.ttf);
-}
-
-@font-face {
-  font-family: Kalam-Bold;
-  src: url(../fonts/Kalam/Kalam-Bold.ttf);
-}
-
-@font-face {
-  font-family: Kalam-Regular;
-  src: url(../fonts/Kalam/Kalam-Regular.ttf);
-}
-
-@font-face {
-  font-family: RobotoCondensed-Regular;
-  src: url(../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
-}
-
-@font-face {
-  font-family: RobotoCondensed-Italic;
-  src: url(../fonts/Roboto_Condensed/RobotoCondensed-Italic.ttf);
-}
-
-@font-face {
-  font-family: RobotoCondensed-Bold;
-  src: url(../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf);
-}
-
-@font-face {
-  font-family: RobotoCondensed-BoldItalic;
-  src: url(../fonts/Roboto_Condensed/RobotoCondensed-BoldItalic.ttf);
-}
+@import "../css/css.fonts";
 
 #about-sarah-paragraph-one p,
 #portfolio-homepage p {
@@ -43,6 +10,7 @@
 }
 
 #scrollable-menu-content {
+  padding: 40px;
   position: absolute;
   overflow-y: auto;
   overflow-x: hidden;
@@ -93,21 +61,62 @@
   letter-spacing: 1px;
 }
 
-#menu-contact-information a:hover {
-  color: #1FBBA6;
-}
-
 #menu-contact-information img {
   width: 32px;
 }
 
-#menu-phone-number a:hover,
-#menu-gmail a:hover {
-  color: #fdfdfd;
+#menu-linkedin p,
+#menu-linkedin .menu-logo-hover {
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-#menu-contact-information li {
-  list-style-type: none;
+#menu-linkedin .menu-logo-hover {
+  margin: 10px 10px 10px 0;
+  background-image: url("../images/linkedin_logo_white.svg");
+  height: 32px;
+  width: 32px;
+  background-position: center;
+  background-size: cover;
+}
+
+#menu-linkedin:hover .menu-logo-hover {
+  background-image: url("../images/linkedin_logo_green.svg");
+  height: 32px;
+  width: 32px;
+  background-position: center;
+  background-size: cover;
+}
+
+#menu-github p,
+#menu-github .menu-logo-hover {
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#menu-github .menu-logo-hover {
+  margin: 10px 10px 10px 0;
+  background-image: url("../images/github_logo_white.svg");
+  height: 32px;
+  width: 32px;
+  background-position: center;
+  background-size: cover;
+}
+
+#menu-github:hover .menu-logo-hover {
+  background-image: url("../images/github_logo_green.svg");
+  height: 32px;
+  width: 32px;
+  background-position: center;
+  background-size: cover;
+}
+
+#menu-linkedin:hover p,
+#menu-github:hover p,
+#resume-download a:hover {
+  color: #1FBBA6;
 }
 
 #menu-phone-number img,
@@ -133,6 +142,23 @@
   right: 36px;
   cursor: pointer;
 }
+
+#hamburger #hamburger-hover-state {
+  background-image: url("../images/hamburger_menu_final.svg");
+  height: 32px;
+  width: 32px;
+  background-position: center;
+  background-size: cover;
+}
+
+#hamburger #hamburger-hover-state:hover {
+  background-image: url("../images/hamburger_menu_hover.svg");
+  height: 32px;
+  width: 32px;
+  background-position: center;
+  background-size: cover;
+}
+
 
 #landing-page {
   background: url(../images/landing_page_image_hills.jpg);
@@ -200,35 +226,97 @@
   max-width: 100%;
 }
 
-#footer-contact a {
+#portfolio-fitnest-logo img,
+#portfolio-cnbc-logo img {
+  margin: 0 auto;
+  width: 90px;
+}
+
+#portfolio-amazon-logo img,
+#portfolio-medium-logo img,
+#portfolio-bulk-logo img {
+  margin: 0 auto;
+  width: 145px;
+}
+
+#footer-contact {
   font-family: RobotoCondensed-Italic;
-  text-decoration: none;
-  vertical-align: middle;
   color: #474747;
   font-size: 20px;
   letter-spacing: 1px;
 }
 
-#footer-contact a:hover {
-  color: #000;
-}
-
-#footer-contact li {
-  list-style-type: none;
-}
-
 #footer-phone-number img,
-#footer-gmail img,
-#footer-linkedin img,
-#footer-github img {
+#footer-gmail img {
   margin: 10px 10px 10px 0;
+  display: inline-block;
+}
+
+#footer-phone-number p,
+#footer-gmail p {
+  cursor: default;
+  display: inline-block;
+}
+
+#footer-linkedin p {
+  display: inline-block;
+}
+
+.footer-logo-hover {
+  margin: 0;
+  display: block;
+  color: #474747;
   vertical-align: middle;
 }
 
-#footer-phone-number a:hover,
-#footer-gmail a:hover {
-  cursor: default;
+#footer-linkedin .footer-logo-hover {
+  margin: 10px 10px 10px 0;
+  background-image: url("../images/linkedin_logo_green.svg");
+  height: 38px;
+  width: 38px;
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+}
+
+#footer-linkedin:hover .footer-logo-hover {
+  background-image: url("../images/linkedin_logo_black.svg");
+  height: 38px;
+  width: 38px
+  background-position: center;
+  background-size: cover;
+}
+
+#footer-linkedin,
+#footer-github {
   color: #474747;
+  text-decoration: none;
+}
+
+#footer-github p {
+  margin: 0;
+  display: inline-block;
+  color: #474747;
+  vertical-align: middle;
+}
+
+#footer-github .footer-logo-hover {
+  margin: 10px 10px 10px 0;
+  background-image: url("../images/github_logo_green.svg");
+  height: 38px;
+  width: 38px;
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+}
+
+#footer-github:hover .footer-logo-hover {
+  background-image: url("../images/github_logo_black.svg");
+  height: 38px;
+  width: 38px;
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
 }
 
 #resume-link {
@@ -243,7 +331,9 @@
   letter-spacing: 1px;
 }
 
-#resume-link a:hover {
+#resume-link a:hover,
+#footer-linkedin:hover p,
+#footer-github:hover p {
   color: #000;
   text-decoration: none;
 }
@@ -261,7 +351,7 @@
   color: #474747;
 }
 
-#fitnest-full-view {
+#fitnest-mini-image {
   position: fixed;
   right: 80px;
   bottom: 20px;
@@ -269,10 +359,6 @@
   font-family: RobotoCondensed-Regular;
   font-size: 12px;
   letter-spacing: 1px;
-}
-
-#fitnest-full-view-text p {
-  text-align: center;
 }
 
 .menu-wrapper {
@@ -348,22 +434,28 @@ a[data-toggle="collapse"] {
   text-align: center;
 }
 
-.portfolio-column a {
-  margin: 15px;
-  padding: 50px 10px;
-  width: 180px;
-  height: 180px;
-  overflow: hidden;
-  font-family: RobotoCondensed-Bold;
-  font-size: 24px;
-  color: #3E1C49;
-  border: 4px solid #3E1C49;
-  display: inline-block;
-  text-decoration: none;
+.portfolio-column:hover p {
+  color: #1FBBA6;
 }
 
-.portfolio-column a:hover {
-  color: #1FBBA6;
+.portfolio-column p {
+  text-align: center;
+  font-family: RobotoCondensed-Bold;
+  font-size: 18px;
+  color: #3E1C49;
+}
+
+.portfolio-column a {
+  margin: 15px auto;
+  width: 180px;
+  height: 180px;
+  align-items: center;
+  overflow: hidden;
+  border: 4px solid #3E1C49;
+  display: inline-block;
+}
+
+.portfolio-column:hover a {
   border: 4px solid #1FBBA6;
 }
 
@@ -419,6 +511,14 @@ a[data-toggle="collapse"] {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.show .overlay .title {
+  display: none;
+}
+
+.show .overlay .title.active {
+  display: block;
 }
 
 .show .img-show {
@@ -545,7 +645,27 @@ a[data-toggle="collapse"] {
   }
 }
 
+@media (max-width: 1600px) {
+  #fitnest-mini-image {
+    right: 5px;
+    width: 150px;
+  }
+
+  #enlarge-image img {
+    height: 100px;
+  }
+}
+
 @media (orientation: portrait) and (max-width: 1000px) {
+  #fitnest-mini-image {
+    right: -12px;
+    width: 150px;
+  }
+
+  #enlarge-image {
+    height: 100px;
+  }
+
   .verbiage {
     padding: 50px 25px 0;
     text-align: center;
