@@ -29,6 +29,7 @@
 
     <div class="menu-wrapper">
       <nav id="popout-nav">
+        <div id="close-menu-button"></div>
         <div id="scrollable-menu-content">
           <div class="menu-items components">
             <div class="menu-option">
@@ -236,7 +237,7 @@
       $('#hamburger').on('click', function(e) {
         e.stopPropagation();
         $('#popout-nav').toggleClass('active');
-        $('body .content').click(function(e) {
+        $('body .content, #close-menu-button').click(function(e) {
           if ($('#popout-nav').hasClass('active')) {
             $("#popout-nav").toggleClass('active')
           }

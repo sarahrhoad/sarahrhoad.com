@@ -36,10 +36,25 @@
   margin-right: 0;
 }
 
-#menu-close {
+#close-menu-button {
   position: relative;
   left: 326px;
   top: 25px;
+  background-image: url("../images/close.svg");
+  height: 30px;
+  width: 30px;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#close-menu-button:hover {
+  background-image: url("../images/close_hover.svg");
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 1;
 }
 
 #menu-contact a,

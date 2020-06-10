@@ -40,16 +40,16 @@
 
     <div class="menu-wrapper">
       <nav id="popout-nav">
-        <img id="menu-close" src="../images/close.svg" alt="">
+        <div class="menu-close" id="close-menu-button"></div>
         <div id="scrollable-menu-content">
           <div class="menu-items components">
-            <div class="menu-option">
+            <div class="menu-option menu-close">
               <a href="#">Home</a>
             </div>
-            <div class="menu-option">
+            <div class="menu-option menu-close">
               <a href="#about-sarah-paragraph-one">About</a>
             </div>
-            <div class="menu-option">
+            <div class="menu-option menu-close">
               <a href="#portfolio-homepage">Portfolio</a>
             </div>
             <div class="menu-option">
@@ -263,7 +263,7 @@
       $('#hamburger').on('click', function(e) {
         e.stopPropagation();
         $('#popout-nav').toggleClass('active');
-        $('body .content').click(function(e) {
+        $('body .content, .menu-close').click(function(e) {
           if ($('#popout-nav').hasClass('active')) {
             $("#popout-nav").toggleClass('active')
           }
