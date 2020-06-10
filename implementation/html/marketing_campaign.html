@@ -47,7 +47,7 @@
               <a href="#">Contact</a>
             </div>
           </div>
-          
+
           <div id="menu-contact-information">
             <div id="menu-phone-number">
               <img src="../images/phone_logo_menu.svg" alt="phone image" />
@@ -81,26 +81,18 @@
       </div>
     </div>
 
-    <div id="page-header">
+    <div class="content" id="page-header">
       <p>Fitnest Marketing Campaign</p>
 
       <div class="section-header-green-line"></div>
     </div>
 
-    <div class="container" id="fitnest-mini-image">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg section-image">
-            <div class="verbiage">
-              <p>View Full Design</p>
-            </div>
-            <img id="enlarge-image" src="../images/fitnest_full_image.png">
-          </div>
-        </div>
-      </div>
-    </div>
+    <a id="btn" href="http://www.google.com" target="_blank">
+      <img src="../images/fitnest_with_transparent_background.svg"><span>View Full Design</span>
+    </a>
 
-    <div class="container">
+
+    <div class="container content">
       <div class="section-header">
         <p>Fitnest</p>
       </div>
@@ -122,11 +114,11 @@
       </div>
     </div>
 
-    <div class="three-dots">
+    <div class="three-dots content">
       <img src="../images/three_dots.svg" alt="Three green dots">
     </div>
 
-    <div class="container">
+    <div class="container content">
       <div class="section-header">
         <p>Fitnest Ad Campaign</p>
       </div>
@@ -163,15 +155,15 @@
       </div>
     </div>
 
-    <div class="three-dots-footer">
+    <div class="three-dots-footer content">
       <img src="../images/three_dots.svg" alt="Three green dots">
     </div>
 
-    <div class="footer-small-swish">
+    <div class="footer-small-swish content">
       <img src="../images/small_swish_2.svg" alt="Light purple swish">
     </div>
 
-    <div class="footer-container container-fluid" id="menu-contact-jump">
+    <div class="footer-container container-fluid content" id="menu-contact-jump">
       <div class="section-header-title">
         <p>Contact</p>
       </div>
@@ -209,7 +201,7 @@
       </div>
     </div>
 
-    <div class="footer-large-swish">
+    <div class="footer-large-swish content">
       <img src="../images/large_swish_2.svg" alt="Light purple swish">
     </div>
 
@@ -257,7 +249,7 @@
       $('#hamburger').on('click', function(e) {
         e.stopPropagation();
         $('#popout-nav').toggleClass('active');
-        $('body').click(function(e) {
+        $('body .content').click(function(e) {
           if ($('#popout-nav').hasClass('active')) {
             $("#popout-nav").toggleClass('active')
           }

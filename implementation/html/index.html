@@ -22,11 +22,10 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
-
 </head>
 
 <body>
-  <div id="landing-page">
+  <div id="landing-page" class="content">
     <a href="#landing-page"></a>
     <div id="landing-title">
       <img src="../images/portfolio_of_sarah_rhoad.svg" alt="">
@@ -41,6 +40,7 @@
 
     <div class="menu-wrapper">
       <nav id="popout-nav">
+        <img id="menu-close" src="../images/close.svg" alt="">
         <div id="scrollable-menu-content">
           <div class="menu-items components">
             <div class="menu-option">
@@ -94,7 +94,7 @@
     </div>
 
 
-    <div class="container" id="about-sarah-section">
+    <div class="container content" id="about-sarah-section">
       <div id="three-dots-after-landing">
         <img src="../images/three_dots.svg" alt="Three green dots">
       </div>
@@ -125,7 +125,7 @@
       </div>
     </div>
 
-    <div class="container-fluid" id="portfolio-homepage">
+    <div class="container-fluid content" id="portfolio-homepage">
       <div class="section-header-title">
         <p>Portfolio</p>
       </div>
@@ -135,7 +135,7 @@
         <div class="col portfolio-column">
           <p>Marketing Campaign</p>
           <div id="portfolio-fitnest-logo">
-            <a class="d-flex portfolio-logos" href="fitnest_page.html">
+            <a class="d-flex portfolio-logos" href="marketing_campaign.html">
               <img src="../images/fitnest_logo.svg">
             </a>
           </div>
@@ -171,7 +171,7 @@
         <div class="col portfolio-column">
           <p>Web Coupon</p>
           <div id="portfolio-bulk-logo">
-            <a class="d-flex portfolio-logos" href="fitness.html">
+            <a class="d-flex portfolio-logos" href="web_coupon.html">
               <img src="../images/bulk_supplements_logo.png">
             </a>
           </div>
@@ -179,15 +179,15 @@
       </div>
     </div>
 
-    <div class="three-dots-footer">
+    <div class="three-dots-footer content">
       <img src="../images/three_dots.svg" alt="Three green dots">
     </div>
 
-    <div class="footer-small-swish">
+    <div class="footer-small-swish content">
       <img src="../images/small_swish_2.svg" alt="Light purple swish">
     </div>
 
-    <div class="footer-container container-fluid" id="menu-contact-jump">
+    <div class="footer-container content container-fluid" id="menu-contact-jump">
       <div class="section-header-title">
         <p>Contact</p>
       </div>
@@ -225,7 +225,7 @@
       </div>
     </div>
 
-    <div class="footer-large-swish">
+    <div class="footer-large-swish content">
       <img src="../images/large_swish_2.svg" alt="Light purple swish">
     </div>
 
@@ -240,12 +240,30 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
   <script type="text/javascript">
+    $(function() {
+      "use strict";
+
+      $(".section-image img").click(function() {
+        var $src = $(this).attr("src");
+        $(".show").toggleClass('active');
+        $(".img-show img").attr("src", $src);
+        $('body').css('overflow', 'hidden');
+      });
+
+      $(".close-button").click(function() {
+        $(".show").toggleClass('active');
+        $('body').css('overflow', 'auto');
+      });
+    });
+  </script>
+
+  <script type="text/javascript">
     $(document).ready(function() {
 
       $('#hamburger').on('click', function(e) {
         e.stopPropagation();
         $('#popout-nav').toggleClass('active');
-        $('body').click(function(e) {
+        $('body .content').click(function(e) {
           if ($('#popout-nav').hasClass('active')) {
             $("#popout-nav").toggleClass('active')
           }
@@ -254,7 +272,6 @@
 
     });
   </script>
-
 
 </body>
 

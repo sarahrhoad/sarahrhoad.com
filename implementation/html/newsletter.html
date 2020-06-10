@@ -81,14 +81,14 @@
       </div>
     </div>
 
-    <div id="page-header">
+    <div class="content" id="page-header">
       <p>CNBC Newsletter Signup</p>
 
       <div class="section-header-green-line"></div>
     </div>
 
 
-    <div class="container" id="initial-process">
+    <div class="container content" id="initial-process">
       <div class="section-header">
         <p>The Initial Process</p>
       </div>
@@ -113,11 +113,11 @@
       </div>
     </div>
 
-    <div class="three-dots">
+    <div class="three-dots content">
       <img src="../images/three_dots.svg" alt="Three green dots">
     </div>
 
-    <div class="container">
+    <div class="container content">
       <div class="section-header">
         <p>The Final Draft</p>
       </div>
@@ -140,11 +140,11 @@
       </div>
     </div>
 
-    <div class="three-dots">
+    <div class="three-dots content">
       <img src="../images/three_dots.svg" alt="Three green dots">
     </div>
 
-    <div class="container">
+    <div class="container content">
       <div class="section-header">
         <p>Newsletter Ad Comparison</p>
       </div>
@@ -165,11 +165,11 @@
       </div>
     </div>
 
-    <div class="three-dots">
+    <div class="three-dots content">
       <img src="../images/three_dots.svg" alt="Three green dots">
     </div>
 
-    <div class="container">
+    <div class="container content">
       <div class="section-header">
         <p>Newsletter Redesign</p>
       </div>
@@ -202,15 +202,15 @@
       </div>
     </div>
 
-    <div class="three-dots-footer">
+    <div class="three-dots-footer content">
       <img src="../images/three_dots.svg" alt="Three green dots">
     </div>
 
-    <div class="footer-small-swish">
+    <div class="footer-small-swish content">
       <img src="../images/small_swish_2.svg" alt="Light purple swish">
     </div>
 
-    <div class="footer-container container-fluid" id="menu-contact-jump">
+    <div class="footer-container container-fluid content" id="menu-contact-jump">
       <div class="section-header-title">
         <p>Contact</p>
       </div>
@@ -248,7 +248,7 @@
       </div>
     </div>
 
-    <div class="footer-large-swish">
+    <div class="footer-large-swish content">
       <img src="../images/large_swish_2.svg" alt="Light purple swish">
     </div>
 
@@ -286,7 +286,7 @@
       $('#hamburger').on('click', function(e) {
         e.stopPropagation();
         $('#popout-nav').toggleClass('active');
-        $('body').click(function(e) {
+        $('body .content').click(function(e) {
           if ($('#popout-nav').hasClass('active')) {
             $("#popout-nav").toggleClass('active')
           }
