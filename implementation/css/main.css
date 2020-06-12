@@ -51,10 +51,6 @@
 
 #close-menu-button:hover {
   background-image: url("../images/close_hover.svg");
-  background-position: center;
-  background-size: cover;
-  cursor: pointer;
-  z-index: 1;
 }
 
 #menu-contact a,
@@ -104,10 +100,6 @@
 
 #menu-linkedin:hover .menu-logo-hover {
   background-image: url("../images/linkedin_logo_green.svg");
-  height: 32px;
-  width: 32px;
-  background-position: center;
-  background-size: cover;
 }
 
 #menu-github p,
@@ -128,10 +120,6 @@
 
 #menu-github:hover .menu-logo-hover {
   background-image: url("../images/github_logo_green.svg");
-  height: 32px;
-  width: 32px;
-  background-position: center;
-  background-size: cover;
 }
 
 #menu-linkedin:hover p,
@@ -139,6 +127,7 @@
 #resume-download a:hover {
   color: #1FBBA6;
 }
+
 
 #menu-phone-number img,
 #menu-gmail img,
@@ -176,7 +165,7 @@
 }
 
 #landing-page {
-  background: url(../images/landing_page_image_hills.jpg);
+  background: url("../images/landing_page_image_hills.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -289,9 +278,6 @@
 
 #footer-linkedin:hover .footer-logo-hover {
   background-image: url("../images/linkedin_logo_black.svg");
-  height: 38px;
-  width: 38px background-position: center;
-  background-size: cover;
 }
 
 #footer-linkedin,
@@ -319,11 +305,6 @@
 
 #footer-github:hover .footer-logo-hover {
   background-image: url("../images/github_logo_black.svg");
-  height: 38px;
-  width: 38px;
-  display: inline-block;
-  background-position: center;
-  background-size: cover;
 }
 
 #resume-link {
@@ -351,6 +332,23 @@
   font-size: 12px;
 }
 
+#footer-small-swish {
+  position: relative;
+  clear: both;
+  top: 65px;
+  right: 36px;
+  z-index: -1;
+}
+
+#footer-large-swish {
+  position: relative;
+  margin-bottom: -210px;
+  bottom: 210px;
+  left: 36px;
+  z-index: -1;
+  float: right;
+}
+
 #page-header {
   padding: 21px 15px 0px;
   font-family: Kalam-Bold;
@@ -358,7 +356,7 @@
   color: #474747;
 }
 
-#btn {
+#full-design-button {
   position: fixed;
   bottom: 36px;
   right: 36px;
@@ -369,13 +367,13 @@
   z-index: 1;
 }
 
-#btn img {
+#bfull-design-button img {
   margin-top: -1px;
   margin-bottom: 1px;
   height: 56px;
 }
 
-#btn span {
+#full-design-button span {
   display: inline-block;
   max-width: 0;
   transition: max-width 1s, padding .2s ease .25s;
@@ -388,7 +386,7 @@
   letter-spacing: 1px;
 }
 
-#btn:hover span {
+#full-design-button:hover span {
   max-width: 300px;
   padding-right: 14px;
 }
@@ -406,12 +404,12 @@ a[data-toggle="collapse"] {
   position: fixed;
 }
 
-.menu-items {
+.menu {
   margin: 50px 0 0 10px;
   list-style-type: none;
 }
 
-.menu-items a {
+.menu a {
   font-family: Kalam-Bold;
   font-size: 20px;
   background-color: #3E1C49;
@@ -420,11 +418,11 @@ a[data-toggle="collapse"] {
   text-decoration: none;
 }
 
-.menu-items a:hover {
+.menu a:hover {
   color: #1FBBA6;
 }
 
-.menu-option {
+.menu-content-item {
   padding-bottom: 30px;
 }
 
@@ -491,24 +489,6 @@ a[data-toggle="collapse"] {
   border: 4px solid #1FBBA6;
 }
 
-.footer-small-swish {
-  position: relative;
-  clear: both;
-  top: 65px;
-  right: 36px;
-  z-index: -1;
-}
-
-.footer-large-swish {
-  position: relative;
-  margin-bottom: -210px;
-  bottom: 210px;
-  left: 36px;
-  z-index: -1;
-  float: right;
-}
-
-
 .footer-logo-hover {
   margin: 0;
   display: block;
@@ -545,20 +525,13 @@ a[data-toggle="collapse"] {
 }
 
 .show .overlay {
+  display: block;
   width: 100%;
   height: 100%;
   background: #fff;
   position: fixed;
   top: 0;
   left: 0;
-}
-
-.show .overlay .title {
-  display: none;
-}
-
-.show .overlay .title.active {
-  display: block;
 }
 
 .show .img-show {
@@ -578,26 +551,6 @@ a[data-toggle="collapse"] {
   left: 50%;
   transform: translate(-50%, -50%);
   position: fixed;
-}
-
-.scrollable-image-display .img-show {
-  width: 100%;
-  overflow-y: scroll;
-}
-
-.scrollable-image-display .img-show img {
-  width: 100%;
-  top: 10%;
-  left: 0;
-  transform: none;
-}
-
-.fixed-image-display-title .show p {
-  padding: 40px;
-  width: 100%;
-  position: fixed;
-  text-align: center;
-  font-family: RobotoCondensed-Bold;
 }
 
 .close-button {
@@ -650,62 +603,7 @@ a[data-toggle="collapse"] {
   border: 2.5px solid #1FBBA6;
 }
 
-@media (orientation: portrait) and (max-width: 450px) {
-  .section-header-title {
-    font-size: 35px;
-  }
-
-  .footer-container {
-    padding: 46px 0 0;
-  }
-
-  #page-header {
-    padding: 0;
-    font-size: 35px;
-  }
-
-  #hamburger {
-    top: 46px;
-    width: 24px;
-  }
-
-  #footer-contact a {
-    font-size: 18px;
-  }
-
-  #footer-phone-number img,
-  #footer-gmail img,
-  #footer-linkedin img,
-  #footer-github img {
-    height: 32px;
-  }
-
-  ul#footer-contact {
-    padding-left: 0px;
-  }
-}
-
-@media (max-width: 1600px) {
-  #fitnest-mini-image {
-    right: 5px;
-    width: 150px;
-  }
-
-  #enlarge-image img {
-    height: 100px;
-  }
-}
-
-@media (orientation: portrait) and (max-width: 1000px) {
-  #fitnest-mini-image {
-    right: -12px;
-    width: 150px;
-  }
-
-  #enlarge-image {
-    height: 100px;
-  }
-
+@media (max-width: 1000px) {
   .verbiage {
     padding: 50px 25px 0;
     text-align: center;
@@ -716,7 +614,17 @@ a[data-toggle="collapse"] {
   }
 }
 
-@media (orientation: landscape) and (max-width: 850px) {
+@media (max-width: 850px) {
+  #page-header {
+    padding: 0;
+    font-size: 35px;
+  }
+
+  #hamburger {
+    top: 46px;
+    width: 24px;
+  }
+
   .section-header-title {
     font-size: 35px;
   }
@@ -728,25 +636,33 @@ a[data-toggle="collapse"] {
   .section-image img {
     max-width: 80%;
   }
+}
 
+@media (max-width: 450px) {
   #page-header {
-    padding: 0;
-    font-size: 35px;
+    font-size: 31px;
   }
 
-  #hamburger {
-    top: 46px;
-    width: 24px;
+  #footer-contact a {
+    font-size: 18px;
+  }
+
+  #footer-phone-number img,
+  #footer-gmail img {
+    height: 31px;
+  }
+
+  #footer-github .footer-logo-hover,
+  #footer-linkedin .footer-logo-hover,
+  #footer-github:hover .footer-logo-hover,
+  #footer-linkedin:hover .footer-logo-hover {
+    height: 31px;
+    width: 31px;
   }
 }
 
-@media (orientation: landscape) and (max-width: 1000px) {
-  .verbiage {
-    padding: 50px 50px 0;
-    text-align: center;
-  }
-
-  .source-code {
-    text-align: center;
+@media (max-width: 400px) {
+  #page-header {
+    font-size: 32px;
   }
 }
