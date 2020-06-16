@@ -1,7 +1,6 @@
 @import "../css/css.fonts";
 
-#about-sarah-paragraph-one p,
-#portfolio-homepage p {
+#about-sarah-paragraph-one p {
   padding-top: 40px;
 }
 
@@ -230,15 +229,15 @@
   max-width: 100%;
 }
 
-#portfolio-fitnest-logo img,
-#portfolio-cnbc-logo img {
+#portfolio-fitnest-logo,
+#portfolio-cnbc-logo {
   margin: 0 auto;
   width: 90px;
 }
 
-#portfolio-amazon-logo img,
-#portfolio-medium-logo img,
-#portfolio-bulk-logo img {
+#portfolio-amazon-logo,
+#portfolio-medium-logo,
+#portfolio-bulk-logo {
   margin: 0 auto;
   width: 145px;
 }
@@ -460,8 +459,14 @@ a[data-toggle="collapse"] {
   background: #1FBBA6;
 }
 
-.portfolio-column {
+.portfolio-wrapper {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+a.portfolio-column {
   text-align: center;
+  text-decoration: none;
 }
 
 .portfolio-column:hover p {
@@ -469,14 +474,14 @@ a[data-toggle="collapse"] {
 }
 
 .portfolio-column p {
-  text-align: center;
+  margin-top: 40px;
   font-family: RobotoCondensed-Bold;
   font-size: 18px;
   color: #3E1C49;
+  text-decoration: none;
 }
 
-.portfolio-column a {
-  margin: 15px auto;
+.portfolio-column .portfolio-logo {
   width: 180px;
   height: 180px;
   align-items: center;
@@ -485,7 +490,7 @@ a[data-toggle="collapse"] {
   display: inline-block;
 }
 
-.portfolio-column:hover a {
+.portfolio-column:hover .portfolio-logo {
   border: 4px solid #1FBBA6;
 }
 
