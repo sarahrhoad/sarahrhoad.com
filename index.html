@@ -6,17 +6,17 @@
   <meta name="viewport" charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>sarahrhoad.com/portfolio-sign-in-page</title>
+  <title>sarahrhoad.com</title>
 
   <!-- Bootstrap CSS CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-  <link rel="stylesheet" type="text/css" href="../css/main.css">
-  <link rel="stylesheet" type="text/css" href="../css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
 
   <!-- Font Awesome JS -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -25,37 +25,48 @@
 </head>
 
 <body>
+  <div id="landing-page" class="close-menu-page-wrapper">
+    <a href="#landing-page"></a>
+    <div id="landing-title">
+      <img src="images/portfolio_of_sarah_rhoad.svg" alt="Hills">
+    </div>
+
+    <div id="down-arrow" class="close-menu-page-wrapper">
+      <img src="images/down_arrow_original.svg" alt="Arrow tip pointing down">
+    </div>
+  </div>
+
   <div class="container-fluid" id="entire-page-wrapper">
 
     <div class="menu-wrapper">
       <nav id="popout-nav">
-        <div id="close-menu-button"></div>
+        <div class="link-closes-menu" id="close-menu-button"></div>
         <div id="scrollable-menu-content">
           <div class="menu">
             <div class="menu-content-item">
-              <a href="index.html#landing-page">Home</a>
+              <a class="link-closes-menu" href="#">Home</a>
             </div>
             <div class="menu-content-item">
-              <a href="index.html#three-dots-after-landing">About</a>
+              <a class="link-closes-menu" href="#three-dots-after-landing">About</a>
             </div>
             <div class="menu-content-item">
-              <a href="index.html#portfolio-homepage">Portfolio</a>
+              <a class="link-closes-menu" href="#portfolio-homepage">Portfolio</a>
             </div>
             <div class="menu-content-item">
               <div class="menu-green-line"></div>
             </div>
             <div class="menu-content-item" id="menu-contact">
-              <a href="#">Contact</a>
+              <p>Contact</p>
             </div>
           </div>
 
           <div id="menu-contact-information">
             <div id="menu-phone-number">
-              <img src="../images/phone_logo_menu.svg" alt="Phone" />
+              <img src="images/phone_logo_menu.svg" alt="Phone" />
               <a href='#'>507-491-7198</a>
             </div>
             <div id="menu-gmail">
-              <img src="../images/email_logo_menu.svg" alt="Envelope" />
+              <img src="images/email_logo_menu.svg" alt="Envelope" />
               <a href='#'>sarah.rhoad@gmail.com</a>
             </div>
             <div>
@@ -71,7 +82,7 @@
               </a>
             </div>
             <div id="resume-download">
-              <a href="../media/sarahrhoad_resume.pdf" target="_blank">Download Sarah's Resume HERE</a>
+              <a href="media/sarahrhoad_resume.pdf" target="_blank">Download Sarah's Resume HERE</a>
             </div>
           </div>
         </div>
@@ -83,82 +94,117 @@
     </div>
 
     <div class="close-menu-page-wrapper">
-      <div id="page-header">
-        <p>Medium Sign In</p>
+      <div class="container" id="about-sarah-section">
+        <div id="three-dots-after-landing">
+          <img src="images/three_dots.svg" alt="Three green dots">
+        </div>
+        <div id="about-sarah-paragraph-one">
+          <p>
+            I was first introduced to front-end web development while using WordPress. Seeing the changes happen instantaneously to a website made me realize I have a true joy and passion for it.
+          </p>
+        </div>
+        <div id="about-sarah-paragraph-two">
+          <p>
+            I have experience in multiple areas within software development, continuing to gain valuable skills which I apply to each new position. I welcome new challenges, and I am always trying to push myself to grow by continuing to learn new
+            skills through courses, tutorials, mentors, etc.
+          </p>
+        </div>
+        <div id="about-sarah-paragraph-three">
+          <p>
+            This website displays some of my portfolio pieces.
+          </p>
+        </div>
+        <div id="about-sarah-paragraph-four">
+          <p>
+            I am currently seeking a Static Front-End Web Developer position.
+          </p>
+        </div>
+        <div id="sarah-signature">
+          <img src="images/signature_about.svg" alt="Sarah Rhoad">
+        </div>
+      </div>
 
+      <div class="container-fluid" id="portfolio-homepage">
+        <div class="section-header-title">
+          <p>Portfolio</p>
+        </div>
         <div class="section-header-green-line"></div>
-      </div>
 
-
-      <div class="container" id="initial-process">
-        <div class="section-header">
-          <p>The Initial Process</p>
-        </div>
-
-        <div class="container">
-          <div class="row">
-            <div class="col-lg section-image">
-              <img src="../images/sign_in_imac_comparison_final.png" alt="Medium_Sign_In_Comparison">
-            </div>
-
-            <div class="col-lg col-md-12 section-information">
-              <div class="verbiage">
-                <p>To gain more experience my design mentor suggested I find media ads to recreate and develop using HTML and CSS.</p>
-                <p>First I replicated the ads as close to the originals as possible. After that I redesigned each ad for an extra challenge, then built both versions using HTML and CSS.</p>
-                <p>In doing so it has helped me gain a better understanding of what design elements are used when creating ads, blogs, websites, etc. </p>
-                <p>I also have a new appreciation for the different ways space, color, shapes, imagery, etc. play a role in the look, feel, and voice of a message or website.</p>
-                <p>This media source is a sign-in popup where users either sign into an exisiting account or create a new account.</p>
-              </div>
+        <div class="row">
+          <div class="col">
+            <div class="portfolio-wrapper">
+              <a class="portfolio-column" href="html/marketing_campaign.html">
+                <div>
+                  <p>Marketing Campaign</p>
+                </div>
+                <div class="d-flex portfolio-logo">
+                  <img id="portfolio-fitnest-logo" src="images/fitnest_logo.svg" alt="Fitnest_Logo">
+                </div>
+              </a>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="three-dots">
-        <img src="../images/three_dots.svg" alt="Three green dots">
-      </div>
-
-      <div class="container">
-        <div class="section-header">
-          <p>Website Ad Campaign</p>
-        </div>
-
-        <div class="container">
-          <div class="row">
-            <div class="col-lg section-image">
-              <img src="../images/sign_in_ipad_iphone.png" alt="Medium_Sign_In">
-            </div>
-            <div class="show">
-              <div class="overlay"></div>
-              <div>
-                <img class="close-button" src="../images/close_button_final.svg" alt="X">
-              </div>
-              <div class="img-show">
-                <img src="../images/sign_in_ipad_iphone.png" alt="Medium_Sign_In">
-              </div>
-            </div>
-
-            <div class="col-lg col-md-12 section-information">
-              <div class="verbiage">
-                <p>The media website's main focus is on presenting the news stories they are publishing. They use a lot of white space throughout their website saving the color and design for the images found within the articles.</p>
-                <p>
-                  For this reason I chose to have a smaller images displayed in a unique way, with more transparent, and artistic graphical design elements in the background to add a little depth to the page.</p>
-                <p>I also dampened the images to help keep the users focus on either signing in or creating an account since that is the main purpose for this screen.</p>
-              </div>
-              <div class="source-code">
-                <a href='https://github.com/sarahrhoad/projects/tree/master/media_ads/sign_in_redesign' target="_blank">Source Code</a>
-              </div>
+          <div class="col">
+            <div class="portfolio-wrapper">
+              <a class="portfolio-column" href="html/newsletter.html">
+                <div>
+                  <p>Newsletter Signup</p>
+                </div>
+                <div class="d-flex portfolio-logo">
+                  <img id="portfolio-cnbc-logo" src="images/cnbc_logo.svg" alt="CNBC_Logo">
+                </div>
+              </a>
             </div>
           </div>
+
+          <div class="col">
+            <div class="portfolio-wrapper">
+              <a class="portfolio-column" href="html/sign_in.html">
+                <div>
+                  <p>Sign In Page</p>
+                </div>
+                <div class="d-flex portfolio-logo">
+                  <img id="portfolio-medium-logo" src="images/medium_logo.svg">
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="portfolio-wrapper">
+              <a class="portfolio-column" href="html/amazon.html">
+                <div>
+                  <p>Banner Ad</p>
+                </div>
+                <div class="d-flex portfolio-logo">
+                  <img id="portfolio-amazon-logo" src="images/amazon_logo.png" alt="Amazon_Music_Logo">
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="portfolio-wrapper">
+              <a class="portfolio-column" href="html/web_coupon.html">
+                <div>
+                  <p>Web Coupon</p>
+                </div>
+                <div class="d-flex portfolio-logo">
+                  <img id="portfolio-bulk-logo" src="images/bulk_supplements_logo.png" alt="Bulk_Supplements_Logo">
+                </div>
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
 
       <div class="three-dots-footer">
-        <img src="../images/three_dots.svg" alt="Three green dots">
+        <img src="images/three_dots.svg" alt="Three green dots">
       </div>
 
       <div id="footer-small-swish">
-        <img src="../images/small_swish_2.svg" alt="Light purple swish">
+        <img src="images/small_swish_2.svg" alt="Light purple swish">
       </div>
 
       <div class="footer-container container-fluid" id="menu-contact-jump">
@@ -169,11 +215,11 @@
 
         <div id="footer-contact">
           <div id="footer-phone-number">
-            <img src="../images/phone_logo_footer.svg" alt="Phone">
+            <img src="images/phone_logo_footer.svg" alt="Phone">
             <p>507-491-7198</p>
           </div>
           <div id="footer-gmail">
-            <img src="../images/email_logo_footer.svg" alt="Envelope">
+            <img src="images/email_logo_footer.svg" alt="Envelope">
             <p>sarah.rhoad@gmail.com</p>
           </div>
           <div>
@@ -191,7 +237,7 @@
         </div>
 
         <div id="resume-link">
-          <a href="../media/sarahrhoad_resume.pdf" target="_blank">Download Sarah's Resume HERE</a>
+          <a href="media/sarahrhoad_resume.pdf" target="_blank">Download Sarah's Resume HERE</a>
         </div>
 
         <div id="footer-copyright">
@@ -200,7 +246,7 @@
       </div>
 
       <div id="footer-large-swish">
-        <img src="../images/large_swish_2.svg" alt="Light purple swish">
+        <img src="images/large_swish_2.svg" alt="Light purple swish">
       </div>
     </div>
   </div>
@@ -237,7 +283,7 @@
       $('#hamburger').on('click', function(e) {
         e.stopPropagation();
         $('#popout-nav').toggleClass('active');
-        $('body .close-menu-page-wrapper, #close-menu-button').click(function(e) {
+        $('body .close-menu-page-wrapper, .link-closes-menu').click(function(e) {
           if ($('#popout-nav').hasClass('active')) {
             $("#popout-nav").toggleClass('active')
           }

@@ -408,7 +408,8 @@ a[data-toggle="collapse"] {
   list-style-type: none;
 }
 
-.menu a {
+.menu a, .menu p {
+  margin-bottom: 0;
   font-family: Kalam-Bold;
   font-size: 20px;
   background-color: #3E1C49;
