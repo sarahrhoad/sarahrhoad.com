@@ -1,0 +1,746 @@
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: OpenSans-BoldItalic;
+  src: url(../fonts/OpenSans-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: OpenSans-ExtraBold;
+  src: url(../fonts/OpenSans-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: OpenSans-ExtraBoldItalic;
+  src: url(../fonts/OpenSans-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+  font-family: OpenSans-Italic;
+  src: url(../fonts/OpenSans-Italic.ttf);
+}
+
+@font-face {
+  font-family: OpenSans-Light;
+  src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: OpenSans-LightItalic;
+  src: url(../fonts/OpenSans-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: OpenSans-SemiBold;
+  src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: OpenSans-SemiBoldItalic;
+  src: url(../fonts/OpenSans-SemiBoldItalic.ttf);
+}
+
+table {
+  margin: auto;
+  padding-bottom: 200px;
+  font-size: 18px;
+  font-family: OpenSans-SemiBold;
+  border-collapse: separate;
+  border-spacing: 5px;
+}
+
+td, th {
+  width: 188px;
+  padding: 12px;
+  text-align: center;
+}
+
+#navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-shadow: 0px 1px 5px 1px #00000080;
+}
+
+#logo {
+  display: inline;
+}
+
+#logo img {
+  width: 115px;
+}
+
+#start-div {
+  height: 100%;
+}
+
+#start-today {
+  color: #4F4F4F;
+  font-family: OpenSans-SemiBold;
+  font-size: 14px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+#start-today:hover {
+  color: #77BDD9;
+}
+
+#more-section-bottom-runner {
+  position: absolute;
+  text-align: center;
+  bottom: 100px;
+  left: 50%;
+}
+
+#more {
+  margin: 0;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: OpenSans-Regular;
+  letter-spacing: .5px;
+}
+
+#runner-image-section {
+  position: relative;
+}
+
+#background-image {
+  overflow-x: hidden;
+}
+
+#background-image img {
+  min-width: 100%;
+  height: 100vh;
+}
+
+#information-on-runner {
+  width: auto;
+  position: absolute;
+  top: 27%;
+  left: 29%;
+}
+
+#runner-message {
+  vertical-align: middle;
+  display: inline;
+  color: #ffffff;
+  font-family: OpenSans-Bold;
+  letter-spacing: 2px;
+}
+
+#runner-small-text1,
+#runner-small-text2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+#runner-large-text1,
+#runner-large-text2 {
+  margin: 0;
+  font-size: 30px;
+}
+
+#percentage,
+#runner-line,
+#runner-message {
+  display: inline-block;
+}
+
+#percentage img {
+  width: 100%;
+  display: inline-block;
+}
+
+#runner-line img {
+  display: inline-block;
+  padding: 0px 30px;
+}
+
+#blue-1-message {
+  padding: 60px;
+  font-family: OpenSans-SemiBold;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-shadow: 1px 0px 0px #fff;
+}
+
+#blue-1-message p {
+  font-size: 26px;
+}
+
+#blue-1-message ul {
+  padding: 0px;
+  display: inline-block;
+}
+
+#blue-1-message li {
+  padding-bottom: 5px;
+  text-align: left;
+  font-size: 22px;
+}
+
+#flag-fitness-goals-section {
+  padding-bottom: 200px;
+}
+
+#finish-line-flag {
+  padding: 55px 30px 0px 0px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+#finish-line-flag img {
+  width: 100%;
+}
+
+#reach-fitness-goals-message {
+  padding-left: 30px;
+  font-family: OpenSans-Regular;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+
+#reach-fitness-goals-message p {
+  font-size: 30px;
+  text-align: left;
+}
+
+#reach-fitness-goals-message ul {
+  padding-left: 15px;
+  text-align: left;
+  font-size: 20px;
+}
+
+#reach-fitness-goals-message li {
+  font-family: OpenSans-Regular;
+}
+
+#fitness-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#long-blue-line-separator img {
+  width: 66%;
+}
+
+#table-text-bold {
+  font-family: OpenSans-Bold;
+}
+
+#disclaimer-message {
+  padding-bottom: 100px;
+}
+
+#disclaimer-message p {
+  margin: 0;
+  font-family: OpenSans-SemiBoldItalic;
+  font-size: 12px;
+  color: #828282;
+  text-align: center;
+  letter-spacing: .5px;
+}
+
+#blue-2-message {
+  padding: 60px;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+#blue-2-defeated p {
+  font-family: OpenSans-SemiBold;
+  font-size: 26px;
+}
+
+#blue-2-but {
+  font-family: OpenSans-BoldItalic;
+  font-size: 36px;
+}
+
+#intencity-image img,
+#interval-image img {
+  width: 276px;
+}
+
+#interval-image {
+  padding-bottom: 265px;
+}
+
+#white-2-long-gray-line {
+  padding-bottom: 50px;
+}
+
+#gray-container-content {
+  padding: 30px;
+}
+
+#gray-large-text-message p,
+#gray-small-text-message p {
+  font-family: OpenSans-Bold;
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+#gray-large-text-message span {
+  font-family: OpenSans-BoldItalic;
+}
+
+#gray-small-text-message p {
+  font-family: OpenSans-Regular;
+  font-size: 18px;
+}
+
+#signup-email-buttons {
+  text-align: center;
+}
+
+#gray-email-input input {
+  width: 400px;
+  padding: 14px 0px;
+  display: inline;
+  font-family: OpenSans-Regular;
+  font-size: 14px;
+  color: #828282;
+  border-radius: 33px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 1px 1px 1px #00000030;
+}
+
+::placeholder {
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+#gray-signup-button {
+  margin-left: 10px;
+  padding: 15px 26px;
+  color: #ffffff;
+  font-family: OpenSans-SemiBold;
+  font-size: 14px;
+  border-radius: 33px;
+  background-color: #77BDD9;
+  text-decoration: none;
+  letter-spacing: 2px;
+  box-shadow: 0px 1px 1px 1px #00000030;
+}
+
+#gray-signup-button:hover {
+  background-color: #68A5BD;
+}
+
+#footer-references {
+  font-family: OpenSans-BoldItalic;
+  font-size: 14px;
+}
+
+#footer-copyright {
+  padding-top: 50px;
+  font-family: OpenSans-Regular;
+  font-size: 12px;
+}
+
+#footer-social-media-message {
+  font-family: OpenSans-BoldItalic;
+  font-size: 18px;
+  color: #828282;
+}
+
+#cdc-link {
+  word-wrap: break-word;
+}
+
+.color1 {
+  background: #E4CCE7;
+}
+
+.color2 {
+  background: #D3CCE0;
+}
+
+.color3 {
+  font-family: OpenSans-Bold;
+  background: #CA99CF;
+}
+
+.color4 {
+  font-family: OpenSans-Bold;
+  background: #A899C1;
+}
+
+.column1 {
+  padding-left: 46px;
+}
+
+.checkmark {
+  background: url('../images/ic_check_green.svg') no-repeat left top;
+  height: 34px;
+  padding-left: 35px;
+}
+
+.blue-container {
+  padding: 30px;
+  background: #3B8DBF;
+  box-shadow: 0px 1px 10px 1px #00000080;
+}
+
+.white-section-1,
+.white-section-2 {
+  text-align: center;
+  color: #4F4F4F;
+}
+
+.comment-bubble-with-message {
+  padding: 100px 30px 200px 30px;
+  font-family: OpenSans-BoldItalic;
+  font-size: 18px;
+}
+
+.comment-bubble-with-message img {
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.comment-bubble-with-message p {
+  padding-left: 20px;
+  display: inline;
+}
+
+.right-side-message-buttons-block {
+  padding-left: 40px;
+}
+
+.intencity-interval-message p {
+  padding-left: 140px;
+  font-family: OpenSans-Regular;
+  text-align: left;
+}
+
+.white-2-larger-text {
+  font-size: 18px;
+}
+
+.white-2-smaller-text {
+  font-size: 14px;
+  color: #828282;
+}
+
+.white-2-line-separator {
+  padding-left: 140px;
+  text-align: left;
+}
+
+.media-buttons {
+  padding-left: 40px;
+}
+
+.apple-image {
+  padding-right: 5px;
+}
+
+.google-image {
+  padding-left: 5px;
+}
+
+.gray-container {
+  padding: 60px;
+  background: #828282;
+  box-shadow: 0px 1px 10px 1px #00000080;
+}
+
+.footer {
+  padding: 100px 100px 40px;
+  letter-spacing: 1px;
+  color: #828282;
+}
+
+.footer-news-links {
+  margin-bottom: 5px;
+  font-family: OpenSans-Regular;
+  font-size: 12px;
+}
+
+.footer-right-media-side {
+  padding-left: 50px;
+}
+
+.footer-media-logo {
+  padding-right: 10px;
+}
+
+@media (max-width: 1300px){
+  #information-on-runner {
+    left: 18%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #information-on-runner {
+    left: 22%;
+  }
+
+  #percentage img {
+    width: 180px;
+  }
+
+  #runner-small-text1,
+  #runner-small-text2 {
+    font-size: 14px;
+  }
+
+  #runner-large-text1,
+  #runner-large-text2 {
+    font-size: 22px;
+  }
+
+  #intencity-image img,
+  #interval-image img {
+    width: 236px;
+  }
+
+  .intencity-interval-message p,
+  .white-2-line-separator {
+    padding-left: 96px;
+  }
+
+  .white-2-larger-text {
+    font-size: 16px;
+  }
+
+  .white-2-smaller-text {
+    font-size: 14px;
+  }
+
+  .media-buttons {
+    padding-left: 0px;
+    padding-right: 28px;
+  }
+
+  .apple-image,
+  .google-image {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #runner-small-text1,
+  #runner-small-text2 {
+    font-size: 12px;
+  }
+
+  #runner-large-text1,
+  #runner-large-text2 {
+    font-size: 18px;
+  }
+
+  #percentage img {
+    width: 140px;
+  }
+
+  #runner-line img {
+    height: 90px;
+  }
+
+  #reach-fitness-goals-message {
+    padding-left: 20px;
+  }
+
+  #reach-fitness-goals-message p {
+    font-size: 24px;
+  }
+
+  #reach-fitness-goals-message ul {
+    font-size: 18px;
+  }
+
+  #intencity-image,
+  #interval-image {
+    padding-bottom: 20px;
+  }
+
+  .white-2-blocks {
+    display: block;
+  }
+
+  .right-side-message-buttons-block {
+    padding-left: 0px;
+  }
+
+  .white-2-line-separator,
+  .intencity-interval-message p {
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  .media-buttons {
+    padding: 0px;
+  }
+
+  .apple-image {
+    padding-right: 5px;
+  }
+
+  .google-image {
+    padding-left: 5px;
+  }
+
+  .white-2-intencity-interval {
+    padding-bottom: 265px;
+  }
+
+  .footer-right-media-side {
+    padding-bottom: 50px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  td, th {
+    width: 188px;
+    padding: 7px;
+    text-align: center;
+  }
+
+  #information-on-runner {
+    left: 10%;
+  }
+
+  #runner-large-text1,
+  #runner-large-text2 {
+    font-size: 16px;
+  }
+
+  #blue-1-message,
+  #blue-2-message {
+    padding: 30px;
+  }
+
+  #blue-1-message p,
+  #blue-2-defeated p {
+    font-size: 22px;
+  }
+
+  #blue-1-message ul {
+    display: block;
+  }
+
+  #blue-1-message li {
+    font-size: 18px;
+  }
+
+  #finish-line-flag {
+    padding: 55px 30px 0px 0px;
+  }
+
+  #finish-line-flag img {
+    padding-bottom: 50px;
+  }
+
+  #blue-2-but {
+    font-size: 30px;
+  }
+
+  #white-2-long-gray-line {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  #intencity-image img,
+  #interval-image img {
+    width: 200px;
+  }
+
+  #gray-container {
+    padding: 40px;
+  }
+
+  #gray-container-content {
+    padding: 15px;
+  }
+
+  #gray-email-input input {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  #gray-signup-button {
+    margin-left: 0;
+  }
+
+  .column1 {
+    padding-left: 0px;
+  }
+
+  .table-image img {
+    width: 35px;
+  }
+
+  .footer {
+    padding: 60px;
+  }
+
+  .footer-right-media-side {
+    padding-left: 15px;
+  }
+
+  .footer-left-references-side {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 550px) {
+  #more-section-bottom-runner {
+    left: 45%;
+  }
+
+  #finish-line-flag {
+    padding: 0;
+  }
+
+  #finish-line-flag img {
+    padding-bottom: 50px;
+  }
+
+  #reach-fitness-goals-message {
+    padding-left: 27px;
+  }
+
+  #footer-social-media-message {
+    font-size: 16px;
+  }
+
+  .comment-bubble-with-message img {
+    margin: auto;
+    padding-bottom: 12px;
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  #information-on-runner {
+    padding-left: 45px;
+  }
+  #reach-fitness-goals-message {
+    padding-left: 30px;
+  }
+}
