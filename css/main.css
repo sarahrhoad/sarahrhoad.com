@@ -467,6 +467,7 @@ a[data-toggle="collapse"] {
 
 a.portfolio-column {
   text-align: center;
+  text-align: -moz-center;
   text-decoration: none;
 }
 
