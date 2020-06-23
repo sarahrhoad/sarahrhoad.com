@@ -470,21 +470,77 @@ td, th {
   color: #828282;
 }
 
-.footer-news-links {
+.footer-news-links a {
+  display: block;
   margin-bottom: 5px;
   font-family: OpenSans-Regular;
   font-size: 12px;
+  color: #828282;
+  text-decoration: none;
+}
+
+.footer-news-links a:hover {
+  color: #77BDD9;
 }
 
 .footer-right-media-side {
   padding-left: 50px;
 }
 
-.footer-media-logo {
+.footer-right-media-side a {
   padding-right: 10px;
+  display: inline-block;
 }
 
-@media (max-width: 1300px){
+.footer-twitter-logo .social-media {
+  height: 32px;
+  width: 32px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/twitter_footer.svg");
+}
+
+.footer-twitter-logo:hover .social-media {
+  background-image: url("../images/twitter_blue_footer.svg");
+}
+
+.footer-facebook-logo .social-media {
+  height: 32px;
+  width: 32px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/facebook_footer.svg");
+}
+
+.footer-facebook-logo:hover .social-media {
+  background-image: url("../images/facebook_blue_footer.svg");
+}
+
+.footer-linkedin-logo .social-media {
+  height: 32px;
+  width: 32px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/linkedin_footer.svg");
+}
+
+.footer-linkedin-logo:hover .social-media {
+  background-image: url("../images/linkedin_blue_footer.svg");
+}
+
+.footer-reddit-logo .social-media {
+  height: 32px;
+  width: 32px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/reddit_footer.svg");
+}
+
+.footer-reddit-logo:hover .social-media {
+  background-image: url("../images/reddit_blue_footer.svg");
+}
+
+@media (max-width: 1300px) {
   #information-on-runner {
     left: 18%;
   }
@@ -539,6 +595,7 @@ td, th {
 }
 
 @media screen and (max-width: 1000px) {
+
   #runner-small-text1,
   #runner-small-text2 {
     font-size: 12px;
@@ -740,6 +797,7 @@ td, th {
   #information-on-runner {
     padding-left: 45px;
   }
+
   #reach-fitness-goals-message {
     padding-left: 30px;
   }
