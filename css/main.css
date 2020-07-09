@@ -481,8 +481,16 @@ a.portfolio-column {
   display: inline-block;
 }
 
-#footer-linkedin p {
+#footer-linkedin img,
+#footer-github img {
+  vertical-align: middle;
+}
+
+#footer-linkedin p,
+#footer-linkedin .footer-logo-hover {
+  margin: 0;
   display: inline-block;
+  vertical-align: middle;
 }
 
 #footer-linkedin .footer-logo-hover {
@@ -490,7 +498,6 @@ a.portfolio-column {
   background-image: url("../images/linkedin_logo_green.svg");
   height: 38px;
   width: 38px;
-  display: inline-block;
   background-position: center;
   background-size: cover;
 }
@@ -505,7 +512,8 @@ a.portfolio-column {
   text-decoration: none;
 }
 
-#footer-github p {
+#footer-github p, 
+#footer-github .footer-logo-hover {
   margin: 0;
   display: inline-block;
   color: #474747;
@@ -517,7 +525,6 @@ a.portfolio-column {
   background-image: url("../images/github_logo_green.svg");
   height: 38px;
   width: 38px;
-  display: inline-block;
   background-position: center;
   background-size: cover;
 }
