@@ -18,7 +18,8 @@ a[data-toggle="collapse"] {
   list-style-type: none;
 }
 
-.menu a, .menu p {
+.menu a,
+.menu p {
   margin-bottom: 0;
   font-family: Kalam-Bold;
   font-size: 20px;
@@ -50,7 +51,7 @@ a[data-toggle="collapse"] {
 
 .section-header-title {
   margin: 0;
-  padding: 0;
+  padding-bottom: 100px;
   font-family: Kalam-Bold;
   font-size: 40px;
   color: #474747;
@@ -64,7 +65,27 @@ a[data-toggle="collapse"] {
 }
 
 .button-1 {
-  
+  padding: 12px 25px;
+  height: 30px;
+  border: none;
+  border-radius: 90px;
+  color: #fdfdfd;
+  background: #3E1C49;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 1px 1px 1px #00000030;
+}
+
+.button-1:hover {
+  background: #56445B;
+  text-decoration: none;
+  color: #fdfdfd;
+}
+
+.button-padding {
+  padding-top: 100px;
 }
 
 .portfolio-wrapper {
@@ -223,7 +244,7 @@ a.portfolio-column {
 }
 
 #entire-page-wrapper {
-  padding: 36px;
+  padding: 85px;
 }
 
 #scrollable-menu-content {
@@ -439,12 +460,28 @@ a.portfolio-column {
 }
 
 #sarah-signature {
-  padding: 100px 0 140px 0;
+  padding: 100px 0 200px 0;
   text-align: center;
 }
 
 #sarah-signature img {
   max-width: 100%;
+}
+
+#skills-header-drops {
+  position: relative;
+  clear: both;
+  z-index: -1;
+  top: 100px;
+  right: 100px;
+}
+
+#portfolio-header-drops{
+  position: relative;
+  clear: both;
+  z-index: -1;
+  top: 115px;
+  right: 90px;
 }
 
 #portfolio-fitnest-logo,
@@ -510,7 +547,7 @@ a.portfolio-column {
   text-decoration: none;
 }
 
-#footer-github p, 
+#footer-github p,
 #footer-github .footer-logo-hover {
   margin: 0;
   display: inline-block;
@@ -678,4 +715,71 @@ a.portfolio-column {
     height: 31px;
     width: 31px;
   }
+}
+
+.chart-wrap {
+  margin: 50% auto;
+  width: 650px;
+  height: 600px;
+  font-family: sans-serif;
+}
+
+.chart-wrap .title {
+  text-align: center;
+}
+
+.grid {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 2px solid #aaaaaa;
+  background: repeating-linear-gradient(0deg, transparent, transparent 19.5%, rgba(170, 170, 170, 0.7) 20%);
+}
+
+.grid .bar {
+  background-color: #f16335;
+  width: 45px;
+  height: var(--bar-value);
+  align-self: flex-end;
+  margin: 0 auto;
+  border-radius: 3px 3px 0 0;
+  position: relative;
+}
+
+.grid .bar::before {
+  content: attr(data-name);
+  top: -3em;
+  padding: 10px;
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+.grid.horizontal {
+  flex-direction: column;
+  border-bottom: none;
+  border-left: 2px solid #aaaaaa;
+  background: repeating-linear-gradient(90deg, transparent, transparent 19.5%, rgba(170, 170, 170, 0.7) 20%);
+}
+
+.grid.horizontal .bar {
+  height: 45px;
+  width: var(--bar-value);
+  align-self: flex-start;
+  margin: auto 0 auto 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.grid.horizontal .bar::before {
+  top: initial;
+  left: 100%;
+  padding: 0 10px;
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+  transform: rotate(0deg);
+  line-height: 45px;
 }
