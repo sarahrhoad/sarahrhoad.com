@@ -1,5 +1,31 @@
 @import "fonts.css";
 
+table {  
+  margin: auto auto;
+  border-spacing: 20px;
+  border-collapse: separate;
+  background-color: #fdfdfd;
+  color: #000000;
+  font-size: 16px;
+}
+
+table tr td {
+  padding: 10px;
+}
+
+table td:first-child {
+  border-right: 2px solid #000000;
+}
+
+td {
+  padding: 20px;
+  text-align: right;
+}
+
+th {
+
+}
+
 .menu-wrapper {
   display: flex;
   width: 100%;
@@ -86,6 +112,14 @@ a[data-toggle="collapse"] {
 
 .button-padding {
   padding-top: 100px;
+}
+
+.plant-row {
+  padding: 0 120px;
+}
+
+.dev-bar {
+  background-color: #3E1C4990;
 }
 
 .portfolio-wrapper {
@@ -476,6 +510,34 @@ a.portfolio-column {
   right: 100px;
 }
 
+#empty-plant-row {
+  padding-right: 330px;
+}
+
+#html-bar {
+  width: 80%;
+}
+
+#css-bar {
+  width: 500px;
+}
+
+#bootstrap-bar {
+  width: 300px;
+}
+
+#wordpress-bar {
+  width: 250px;
+}
+
+#javascript-bar {
+  width: 100px;
+}
+
+#jquery-bar {
+  width: 100px;
+}
+
 #portfolio-header-drops{
   position: relative;
   clear: both;
@@ -717,69 +779,3 @@ a.portfolio-column {
   }
 }
 
-.chart-wrap {
-  margin: 50% auto;
-  width: 650px;
-  height: 600px;
-  font-family: sans-serif;
-}
-
-.chart-wrap .title {
-  text-align: center;
-}
-
-.grid {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  border-bottom: 2px solid #aaaaaa;
-  background: repeating-linear-gradient(0deg, transparent, transparent 19.5%, rgba(170, 170, 170, 0.7) 20%);
-}
-
-.grid .bar {
-  background-color: #f16335;
-  width: 45px;
-  height: var(--bar-value);
-  align-self: flex-end;
-  margin: 0 auto;
-  border-radius: 3px 3px 0 0;
-  position: relative;
-}
-
-.grid .bar::before {
-  content: attr(data-name);
-  top: -3em;
-  padding: 10px;
-  display: inline-block;
-  white-space: nowrap;
-  position: absolute;
-  transform: rotate(-45deg);
-}
-
-.grid.horizontal {
-  flex-direction: column;
-  border-bottom: none;
-  border-left: 2px solid #aaaaaa;
-  background: repeating-linear-gradient(90deg, transparent, transparent 19.5%, rgba(170, 170, 170, 0.7) 20%);
-}
-
-.grid.horizontal .bar {
-  height: 45px;
-  width: var(--bar-value);
-  align-self: flex-start;
-  margin: auto 0 auto 0;
-  border-radius: 0 3px 3px 0;
-}
-
-.grid.horizontal .bar::before {
-  top: initial;
-  left: 100%;
-  padding: 0 10px;
-  display: inline-block;
-  white-space: nowrap;
-  position: absolute;
-  transform: rotate(0deg);
-  line-height: 45px;
-}
