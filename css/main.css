@@ -85,11 +85,12 @@ a[data-toggle="collapse"] {
   color: #fdfdfd;
 }
 
-.menu-green-line {
-  margin: 30px 0;
+.menu-drops {
+  padding: 30px 0px;
+  /* margin: 30px 0;
   height: 2px;
   width: 100px;
-  background: #1FBBA6;
+  background: #1FBBA6; */
 }
 
 .button-contact {
@@ -516,8 +517,7 @@ a.portfolio-column {
 }
 
 #menu-linkedin:hover p,
-#menu-github:hover p,
-#resume-download a:hover {
+#menu-github:hover p {
   color: #1FBBA6;
 }
 
@@ -528,14 +528,6 @@ a.portfolio-column {
 #menu-github img {
   margin: 10px 0 10px 10px;
   vertical-align: middle;
-}
-
-#resume-download {
-  padding: 60px 0 30px 0;
-}
-
-#resume-download a {
-  font-size: 18px;
 }
 
 #hamburger {
