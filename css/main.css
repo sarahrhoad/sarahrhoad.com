@@ -90,7 +90,7 @@ a[data-toggle="collapse"] {
 }
 
 .button-contact {
-  padding-top: 100px;
+  padding: 100px 0;
   text-align: center;
 }
 
@@ -122,12 +122,13 @@ a[data-toggle="collapse"] {
 .button-2 {
   padding: 12px 25px;
   height: 30px;
+  position: relative;
+  z-index: 1;
   border: none;
   border-radius: 90px;
   color: #3E1C49;
   background: #fdfdfd;
   text-decoration: none;
-  font-size: 22px;
   font-weight: bold;
   letter-spacing: 1px;
   font-family: RobotoCondensed-Bold;
@@ -238,7 +239,7 @@ a[data-toggle="collapse"] {
   padding-left: 0;
   padding-right: 0;
   max-width: 80%;
-  height: 400px;
+  height: 356px;
 }
 
 .design-graph-wrap {
@@ -251,6 +252,7 @@ a[data-toggle="collapse"] {
 
 .design {
   margin-top: 50px;
+  position: relative;
 }
 
 .graph-bars {
@@ -260,6 +262,10 @@ a[data-toggle="collapse"] {
   display: flex;
   flex-direction: column;
   border-left: 2px solid #000;
+}
+
+.bar {
+  margin: 20px 0;
 }
 
 .design-graph-bars {
@@ -275,19 +281,18 @@ a[data-toggle="collapse"] {
 }
 
 .design-graph-bars .bar {
-  background-color: #1FBBA6A5;
+  background-color: #1FBBA6D8;
 }
 
 .graph-bars .bar,
 .design-graph-bars .bar {
-  height: 30px;
+  height: 36px;
   width: var(--bar-value);
   align-self: flex-start;
-  margin: auto 0 auto 0;
 }
 
 .line {
-  height: 400px;
+  height: 356px;
   border-left: 2px dashed #000000;
 }
 
@@ -312,20 +317,30 @@ a[data-toggle="collapse"] {
 
 .dev-skills,
 .design-skills {
-  padding: 20px;
   height: 100%;
   float: left;
+  font-size: 14px;
   text-align: right;
   position: relative;
 }
 
-.dev-name,
-.design-name {
-  height: 67px;
+.dev-skills {
+  margin-left: 18px;
+  padding: 20px;
 }
 
-.dev-skills {
-  margin-left: 118px;
+.design-skills {
+  padding: 11px 20px 11px 1px;
+}
+
+.dev-name {
+  margin: 5px 0;
+  height: 51px;
+}
+
+.design-name {
+  margin: 5px 0;
+  height: 51px;
 }
 
 .portfolio-wrapper {
@@ -487,17 +502,20 @@ a.portfolio-column {
   border: 2.5px solid #1FBBA6;
 }
 
-#about-section-drops {
-  padding-top: 115px;
-  padding-bottom: 100px
+.container-fluid.about-drops-wrap,
+.container-fluid.skills-drops-wrap,
+.container-fluid.portfolio-drops-wrap {
+  padding-left: 85px;
+  padding-right: 85px;
 }
 
-#entire-page-wrapper {
-  padding: 85px;
+.skills-drops-wrap,
+.portfolio-drops-wrap {
+  position: relative;
 }
 
 #scrollable-menu-content {
-  padding: 34px;
+  padding: 34px 34px 100px;
   position: absolute;
   overflow-y: auto;
   overflow-x: hidden;
@@ -614,7 +632,6 @@ a.portfolio-column {
   color: #1FBBA6;
 }
 
-
 #menu-phone-number img,
 #menu-gmail img,
 #menu-linkedin img,
@@ -676,9 +693,9 @@ a.portfolio-column {
   height: 28px;
 }
 
-#three-dots-after-landing {
-  padding: 180px 0 60px 0;
-  text-align: center;
+#about-section-drops {
+  padding-top: 115px;
+  padding-bottom: 100px
 }
 
 #about-sarah-section {
@@ -708,15 +725,10 @@ a.portfolio-column {
   max-width: 100%;
 }
 
-#skills-homepage {
-  position: relative;
-}
-
 #skills-header-drops {
   position: absolute;
   z-index: -1;
-  left: -75px;
-  top: -10px;
+  left: 0px;
 }
 
 #plant1 {
@@ -740,8 +752,8 @@ a.portfolio-column {
 #skills-right-drops {
   position: absolute;
   z-index: -1;
-  right: -70px;
-  bottom: -30px;
+  right: 0px;
+  bottom: 0px;
 }
 
 #skills-homepage .button-contact {
@@ -749,10 +761,10 @@ a.portfolio-column {
 }
 
 #portfolio-header-drops {
-  position: relative;
+  position: absolute;
   z-index: -1;
-  top: 115px;
-  right: 90px;
+  top: 25px;
+  left: 0px;
 }
 
 #portfolio-fitnest-logo,
@@ -792,6 +804,8 @@ a.portfolio-column {
 }
 
 #footer-contact {
+  position: relative;
+  z-index: 1;
   display: inline-block;
   font-family: RobotoCondensed-Italic;
   color: #fdfdfd;
@@ -950,6 +964,14 @@ a.portfolio-column {
 }
 
 @media (max-width: 1000px) {
+  .graph-wrap {
+    max-width: 100%;
+  }
+
+  .design-graph-wrap {
+    max-width: 100%;
+  }
+
   .verbiage {
     padding: 50px 25px 0;
     text-align: center;
@@ -964,10 +986,6 @@ a.portfolio-column {
   .section-header-title {
     font-size: 35px;
   }
-
-  /* .footer-container {
-    padding: 46px 0 0 0;
-  } */
 
   .section-image img {
     max-width: 80%;
@@ -988,42 +1006,102 @@ a.portfolio-column {
   }
 }
 
+@media (max-width: 615px) {
+  .container-fluid.about-drops-wrap,
+  .container-fluid.skills-drops-wrap,
+  .container-fluid.portfolio-drops-wrap {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .dev-skills,
+  .design-skills {
+    z-index: 1;
+    font-size: 12px;
+    position: absolute;
+    text-align: left;
+    color: #fdfdfd;
+    letter-spacing: .5px;
+  }
+
+  .dev-skills {
+    margin-left: 0px;
+    padding: 23px 8px;
+  }
+
+  .design-skills {
+    padding: 15px 20px 11px 8px;
+  }
+
+  .footer-container {
+    padding: 100px 40px;
+  }
+
+  #plant1 {
+    margin-left: -4.3px;
+  }
+
+  #plant1 img {
+    width: 11px;
+  }
+
+  #plant2 {
+    margin-left: -13.3px;
+  }
+
+  #plant2 img {
+    width: 20px;
+  }
+
+  #plant3 {
+    margin-left: -27.3px;
+  }
+
+  #plant3 img {
+    width: 75px;
+  }
+}
+
 @media (max-width: 560px) {
+
+  .button-1,
+  .button-2 {
+    padding: 12px 18px;
+    font-size: 18px;
+  }
+
   #page-header {
     padding-right: 40px;
     font-size: 32px;
   }
-}
-
-@media (max-width: 450px) {
-  .button-1 {
-    padding: 12px 18px;
-    font-size: 16px;
-  }
-
-  .container-fluid#skills-homepage {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-
-  #page-header {
-    font-size: 31px;
-  }
 
   #footer-contact a {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   #footer-phone-number img,
   #footer-gmail img {
-    height: 31px;
+    margin: 10px 8px 10px 0;
+    height: 30px;
+  }
+
+  #footer-phone-number,
+  #footer-gmail {
+    font-size: 16px;
   }
 
   #footer-github .footer-logo-hover,
   #footer-linkedin .footer-logo-hover,
   #footer-github:hover .footer-logo-hover,
   #footer-linkedin:hover .footer-logo-hover {
-    height: 31px;
-    width: 31px;
+    margin: 10px 8px 10px 0;
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  #page-header {
+    font-size: 31px;
   }
 }
