@@ -22,8 +22,6 @@ td {
   text-align: right;
 }
 
-th {}
-
 .menu-wrapper {
   display: flex;
   width: 100%;
@@ -63,12 +61,6 @@ a[data-toggle="collapse"] {
 
 .three-dots {
   padding: 180px 0;
-  clear: both;
-  text-align: center;
-}
-
-.three-dots-footer {
-  padding-top: 180px;
   clear: both;
   text-align: center;
 }
@@ -337,14 +329,22 @@ a[data-toggle="collapse"] {
   padding: 11px 20px 11px 1px;
 }
 
-.dev-name {
+.dev-name, 
+.design-name {
   margin: 5px 0;
   height: 51px;
 }
 
-.design-name {
-  margin: 5px 0;
-  height: 51px;
+.container-fluid.about-drops-wrap,
+.container-fluid.skills-drops-wrap,
+.container-fluid.portfolio-drops-wrap {
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
+.skills-drops-wrap,
+.portfolio-drops-wrap {
+  position: relative;
 }
 
 .portfolio-wrapper {
@@ -372,7 +372,8 @@ a.portfolio-column {
   text-decoration: none;
 }
 
-.portfolio-column .portfolio-logo {
+.portfolio-column 
+.portfolio-logo {
   width: 180px;
   height: 180px;
   align-items: center;
@@ -382,15 +383,10 @@ a.portfolio-column {
   display: inline-block;
 }
 
-.portfolio-column:hover .portfolio-logo {
+.portfolio-column:hover 
+.portfolio-logo {
   background: #ECE8ED;
   border: 3px solid #3E1C49;
-}
-
-.footer-logo-hover {
-  margin: 0;
-  display: block;
-  color: #474747;
 }
 
 .footer-container {
@@ -398,10 +394,6 @@ a.portfolio-column {
   padding: 0px 100px 100px;
   background-image: linear-gradient(#6E5577, #3E1C49E5, #3E1C49);
 }
-
-/* .contact p {
-  margin: 0px;
-} */
 
 .section-header-top-margin {
   margin-top: 100px;
@@ -504,18 +496,6 @@ a.portfolio-column {
 .source-code a:hover {
   color: #1FBBA6;
   border: 2.5px solid #1FBBA6;
-}
-
-.container-fluid.about-drops-wrap,
-.container-fluid.skills-drops-wrap,
-.container-fluid.portfolio-drops-wrap {
-  padding-left: 85px;
-  padding-right: 85px;
-}
-
-.skills-drops-wrap,
-.portfolio-drops-wrap {
-  position: relative;
 }
 
 #scrollable-menu-content {
@@ -651,7 +631,8 @@ a.portfolio-column {
   cursor: pointer;
 }
 
-#hamburger #hamburger-hover-state {
+#hamburger 
+#hamburger-hover-state {
   height: 26px;
   width: 26px;
   background-image: url("../images/hamburger_menu_final.svg");
@@ -659,7 +640,8 @@ a.portfolio-column {
   background-size: cover;
 }
 
-#hamburger #hamburger-hover-state:hover {
+#hamburger 
+#hamburger-hover-state:hover {
   background-image: url("../images/hamburger_menu_hover.svg");
 }
 
@@ -759,10 +741,6 @@ a.portfolio-column {
   z-index: -1;
   right: 0px;
   bottom: 0px;
-}
-
-#skills-homepage .button-contact {
-  padding-bottom: 108px;
 }
 
 #portfolio-header-drops {
@@ -917,15 +895,6 @@ a.portfolio-column {
   z-index: -1;
 }
 
-#footer-large-swish {
-  position: relative;
-  margin-bottom: -210px;
-  bottom: 210px;
-  left: 36px;
-  z-index: -1;
-  float: right;
-}
-
 #page-header {
   padding: 21px 15px 0px;
   font-family: Kalam-Bold;
@@ -1068,7 +1037,6 @@ a.portfolio-column {
 }
 
 @media (max-width: 560px) {
-
   .button-1,
   .button-2 {
     padding: 12px 18px;
