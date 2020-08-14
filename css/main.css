@@ -75,10 +75,14 @@ a[data-toggle="collapse"] {
 
 .section-header-title {
   margin: 0;
-  padding-bottom: 64px;
+  padding: 100px 0;
   font-family: Kalam-Bold;
   font-size: 40px;
   color: #474747;
+}
+
+.section-header-title p {
+  margin-bottom: 0;
 }
 
 .section-header-title.contact {
@@ -391,7 +395,7 @@ a.portfolio-column {
 
 .footer-container {
   position: relative;
-  padding: 100px;
+  padding: 0px 100px 100px;
   background-image: linear-gradient(#6E5577, #3E1C49E5, #3E1C49);
 }
 
@@ -694,7 +698,7 @@ a.portfolio-column {
 }
 
 #about-section-drops {
-  padding-top: 115px;
+  padding-top: 200px;
   padding-bottom: 100px
 }
 
@@ -717,7 +721,7 @@ a.portfolio-column {
 }
 
 #sarah-signature {
-  padding: 100px 0 200px 0;
+  padding-bottom:100px;
   text-align: center;
 }
 
@@ -729,6 +733,7 @@ a.portfolio-column {
   position: absolute;
   z-index: -1;
   left: 0px;
+  top: 100px;
 }
 
 #plant1 {
@@ -763,7 +768,7 @@ a.portfolio-column {
 #portfolio-header-drops {
   position: absolute;
   z-index: -1;
-  top: 25px;
+  top: 125px;
   left: 0px;
 }
 
@@ -774,7 +779,7 @@ a.portfolio-column {
 }
 
 #portfolio-homepage {
-  padding-bottom: 115px;
+  padding-bottom: 200px;
 }
 
 #portfolio-amazon-logo,
@@ -1034,7 +1039,7 @@ a.portfolio-column {
   }
 
   .footer-container {
-    padding: 100px 40px;
+    padding: 0px 40px 100px;
   }
 
   #plant1 {
