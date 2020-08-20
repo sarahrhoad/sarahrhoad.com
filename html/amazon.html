@@ -41,23 +41,27 @@
 </head>
 
 <body>
-
   <div class="menu-wrapper">
     <nav id="popout-nav">
-      <div id="close-menu-button"></div>
+      <div class="link-closes-menu" id="close-menu-button"></div>
       <div id="scrollable-menu-content">
         <div class="menu">
           <div class="menu-content-item">
-            <a href="../index.html#landing-page">Home</a>
+            <a class="link-closes-menu" href="../index.html#landing-page">Home</a>
           </div>
           <div class="menu-content-item">
-            <a href="../index.html#three-dots-after-landing">About</a>
+            <a class="link-closes-menu" href="../index.html#about-section-drops">About</a>
           </div>
           <div class="menu-content-item">
-            <a href="../index.html#portfolio-homepage">Portfolio</a>
+            <a class="link-closes-menu" href="../index.html#portfolio-homepage">Portfolio</a>
           </div>
           <div class="menu-content-item">
-            <div class="menu-green-line"></div>
+            <a class="link-closes-menu" href="../media/sarahrhoad_resume.pdf" target="_blank">Resume</a>
+          </div>
+          <div class="menu-content-item">
+            <div class="menu-drops">
+              <img src="../images/menu_drops.svg" alt="Two light white small drops">
+            </div>
           </div>
           <div class="menu-content-item" id="menu-contact">
             <p>Contact</p>
@@ -66,11 +70,11 @@
 
         <div id="menu-contact-information">
           <div id="menu-phone-number">
-            <img src="../images/phone_logo_menu.svg" alt="Phone" />
+            <img src="../images/phone_logo_white.svg" alt="Phone" />
             <a href='#'>507-491-7198</a>
           </div>
           <div id="menu-gmail">
-            <img src="../images/email_logo_menu.svg" alt="Envelope" />
+            <img src="../images/email_logo_white.svg" alt="Envelope" />
             <a href='#'>sarah.rhoad@gmail.com</a>
           </div>
           <div>
@@ -84,9 +88,6 @@
               <div class="menu-logo-hover"></div>
               <p>github.com/sarahrhoad/projects</p>
             </a>
-          </div>
-          <div id="resume-download">
-            <a href="../media/sarahrhoad_resume.pdf" target="_blank">Download Sarah's Resume HERE</a>
           </div>
         </div>
       </div>
@@ -142,8 +143,7 @@
         </div>
       </div>
 
-      <div class="image-wrapper">
-
+      <div class="row image-wrapper">
         <div class="section-image">
           <img src="../images/amazon_ipad_vertical_bw_final.png" alt="">
           <img id="zoom-image" src="../images/zoom.svg" alt="">
@@ -158,24 +158,7 @@
           </div>
         </div>
       </div>
-      <!-- 
-      <div class="image-section">
-        <img src="../images/amazon_ipad_vertical_bw_final.png" alt="">
-        <div class="show">
-          <div class="overlay"></div>
-          <div>
-            <img class="close-button" src="../images/close_button_final.svg" alt="X">
-          </div>
-          <div class="img-show">
-            <img src="../images/amazon_ipad_vertical_bw_final.png" alt="">
-          </div>
-        </div>
-      </div> -->
     </div>
-
-
-
-
 
     <div class="container-fluid section-wrapper">
       <div class="content-flex-wrapper">
@@ -212,55 +195,27 @@
           </div>
         </div>
       </div>
+    </div>
 
 
-      <!-- <div class="container" id="tech-graph-wrapper">
-        <div id="tech-used-graph">
-          <div id="amazon-graph">
-            <div id="amazon-names">
-              <p id="amazon-figma">Figma</p>
-              <p id="amazon-aff-photo">Affinity Photo</p>
-              <p id="amazon-html">HTML</p>
-              <p id="amazon-css">CSS</p>
-            </div>
-            <div id="amazon-bars">
-              <div id="amazon-figma-bar"></div>
-              <div id="amazon-aff-photo-bar"></div>
-              <div id="amazon-html-bar"></div>
-              <div id="amazon-css-bar"></div>
-            </div>
-            <div id="graph-bracket">
-              <div id="graph-line1"></div>
-              <div id="graph-line2"></div>
-              <div id="graph-duration">
-                <p>Project Duration ~3 Days</p>
-              </div>
-            </div>
-          </div>
+    <div class="container-fluid section-wrapper purple-section">
+      <div class="project-section-title">
+        <p>Key Take Aways</p>
+        <div class="three-dots">
+          <img src="../images/three_dots.svg" alt="Three green dots">
         </div>
-      </div> -->
-
-    </div>
-  </div>
-
-  <div class="container-fluid section-wrapper purple-section">
-    <div class="project-section-title">
-      <p>Key Take Aways</p>
-      <div class="three-dots">
-        <img src="../images/three_dots.svg" alt="Three green dots">
+      </div>
+      <div class="key-take-aways-section">
+        <div class="verbiage">
+          <p>
+            <img class="bullet-point" src="../images/bullet_point_drop.svg" alt="Tiny light purple rain drop">
+            The HTML and CSS were simple and straightforward to implement.</p>
+          <p>
+            <img class="bullet-point" src="../images/bullet_point_drop.svg" alt="Tiny light purple rain drop">
+            The most challenging aspect of this project was the redesign.</p>
+        </div>
       </div>
     </div>
-    <div class="key-take-aways-section">
-      <div class="verbiage">
-        <p>
-          <img class="bullet-point" src="../images/bullet_point_drop.svg" alt="Tiny light purple rain drop">
-          The HTML and CSS were simple and straightforward to implement.</p>
-        <p>
-          <img class="bullet-point" src="../images/bullet_point_drop.svg" alt="Tiny light purple rain drop">
-          The most challenging aspect of this project was the redesign.</p>
-      </div>
-    </div>
-  </div>
   </div>
 
   <div class="footer-container container-fluid close-menu-page-wrapper" id="menu-contact-jump">
@@ -304,7 +259,7 @@
     </div>
 
     <div class="button-resume">
-      <a class="button-2" href="media/sarahrhoad_resume.pdf" target="_blank">Download Sarah's Resume</a>
+      <a class="button-2" href="../media/sarahrhoad_resume.pdf" target="_blank">Download Sarah's Resume</a>
     </div>
 
     <div id="footer-copyright">
@@ -332,7 +287,6 @@
       $(".section-image img").click(function () {
         var $src = $(this).attr("src");
         $(".show").toggleClass('active');
-        $(".img-show img").attr("src", $src);
         $('body').css('overflow', 'hidden');
       });
 
