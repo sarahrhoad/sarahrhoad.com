@@ -136,6 +136,35 @@ a[data-toggle="collapse"] {
   color: #fdfdfd;
 }
 
+.button-view-full-design {
+  padding-left: 100px; 
+  display: inline-block;
+}
+
+.button-3 {
+  padding: 12px 25px;
+  height: 30px;
+  border: 2px solid #000;
+  border-radius: 90px;
+  color: #000;
+  /* background: #3E1C49; */
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: RobotoCondensed-Bold;
+  box-shadow: 0 1px 5px 1px #0000004C;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+.button-3:hover {
+  background: #ECE8ED;
+  border: 2px solid #3E1C49;
+  text-decoration: none;
+  color: #3E1C49;
+}
+
 @-moz-document url-prefix() {
   .button-1 {
     font-family: RobotoCondensed-Regular;
@@ -414,10 +443,9 @@ a.portfolio-column {
   position: relative;
 }
 
-.section-image img {
-  margin-top: -54px;
-  width: 800px;
-  cursor: pointer
+.section-image2 {
+  margin: 0 auto;
+  position: relative;
 }
 
 .show {
@@ -500,12 +528,14 @@ a.portfolio-column {
 }
 
 .verbiage p {
+  padding: 0 30px;
+  display: inline-block;
   font-family: RobotoCondensed-Regular;
   letter-spacing: 1px;
 }
 
 .bullet-point {
-  padding-right: 30px;
+  display: inline-block;  
 }
 
 .button-source-code {
@@ -942,11 +972,39 @@ a.portfolio-column {
   left: 0px;
 }
 
-#zoom-image {
+#bullet-2-lines {
+  margin-bottom: 30px;
+}
+
+#amazon-image {
+  margin-top: -54px;
+  width: 800px;
+  cursor: pointer;
+}
+
+#amazon-zoom-image {
   position: absolute;
   right: 40px;
   bottom: 40px;
   width: 70px;
+  cursor: pointer;
+
+}
+
+#fitnest-zoom-image1 {
+  position: absolute;
+  right: 50px;
+  bottom: 150px;
+  width: 70px;
+  cursor: pointer;
+}
+
+#fitnest-zoom-image2 {
+  position: absolute;
+  right: 90px;
+  bottom: 40px;
+  width: 70px;
+  cursor: pointer;
 }
 
 #tech-graph-wrapper {
@@ -1043,39 +1101,20 @@ a.portfolio-column {
   text-align: center;
 }
 
-#full-design-button {
-  position: fixed;
-  bottom: 36px;
-  right: 36px;
-  padding: 4px;
-  background-color: #3E1C49;
-  border-radius: 37px;
-  cursor: pointer;
-  z-index: 1;
-}
-
-#bfull-design-button img {
-  margin-top: -1px;
-  margin-bottom: 1px;
-  height: 56px;
-}
-
-#full-design-button span {
+#marketing-button {
   display: inline-block;
-  max-width: 0;
-  transition: max-width 1s, padding .2s ease .25s;
-  vertical-align: middle;
-  white-space: nowrap;
-  overflow: hidden;
-  color: #FDFDFD;
-  font-family: RobotoCondensed-Regular;
-  font-size: 16px;
-  letter-spacing: 1px;
 }
 
-#full-design-button:hover span {
-  max-width: 300px;
-  padding-right: 14px;
+#fitnest-image1 {
+  width: 800px;
+  display: block;
+  cursor: pointer;
+}
+
+#fitnest-image2 {
+  width: 800px;
+  display: block;
+  cursor: pointer;
 }
 
 @media (max-width: 1000px) {
