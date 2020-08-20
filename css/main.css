@@ -420,13 +420,6 @@ a.portfolio-column {
   cursor: pointer
 }
 
-#zoom-image {
-  position: absolute;
-  right: 40px;
-  bottom: 40px;
-  width: 70px;
-}
-
 .show {
   z-index: 3;
   display: none;
@@ -947,6 +940,13 @@ a.portfolio-column {
   z-index: -1;
   top: 60px;
   left: 0px;
+}
+
+#zoom-image {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  width: 70px;
 }
 
 #tech-graph-wrapper {
