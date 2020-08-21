@@ -147,7 +147,6 @@ a[data-toggle="collapse"] {
   border: 2px solid #000;
   border-radius: 90px;
   color: #000;
-  /* background: #3E1C49; */
   text-decoration: none;
   font-size: 22px;
   font-weight: bold;
@@ -436,15 +435,14 @@ a.portfolio-column {
 
 .image-wrapper {
   margin: 0 auto;
+  z-index: 2;
 }
 
 .section-image {
-  margin: 0 auto;
   position: relative;
 }
 
 .section-image2 {
-  margin: 0 auto;
   position: relative;
 }
 
@@ -501,7 +499,7 @@ a.portfolio-column {
 }
 
 .section-wrapper {
-  padding: 100px;
+  padding: 100px 100px 100px 200px;
   display: flex;
 }
 
@@ -510,9 +508,7 @@ a.portfolio-column {
 }
 
 .project-section-title {
-  padding-left: 100px;
-  vertical-align: top;
-  /* flex: 1; */
+  /* padding-left: 100px; */
 }
 
 .project-section-title p {
@@ -523,8 +519,18 @@ a.portfolio-column {
   color: #474747
 }
 
+.three-dots {
+  /* padding-left: 100px; */
+  display: inline-block;
+  vertical-align: top;
+}
+
 .overview-info-wrapper {
-  margin: 0 auto;
+  /* margin: 0 auto; */
+}
+
+.overview-information {
+  display: inline-block;
 }
 
 .verbiage p {
@@ -972,13 +978,26 @@ a.portfolio-column {
   left: 0px;
 }
 
+#verbiage-break {
+  display: block;
+}
+
 #bullet-2-lines {
   margin-bottom: 30px;
 }
 
-#amazon-image {
+#bullet-3-lines {
+  margin-bottom: 50px;
+}
+
+#amazon-image,
+#fitnest-image1,
+#cnbc-image,
+#medium-image,
+#bulk-image {
   margin-top: -54px;
   width: 800px;
+  /* display: block; */
   cursor: pointer;
 }
 
@@ -988,7 +1007,12 @@ a.portfolio-column {
   bottom: 40px;
   width: 70px;
   cursor: pointer;
+}
 
+#fitnest-image2 {
+  width: 800px;
+  display: block;
+  cursor: pointer;
 }
 
 #fitnest-zoom-image1 {
@@ -999,10 +1023,34 @@ a.portfolio-column {
   cursor: pointer;
 }
 
-#fitnest-zoom-image2 {
+/* #fitnest-zoom-image2 {
   position: absolute;
   right: 90px;
   bottom: 40px;
+  width: 70px;
+  cursor: pointer;
+} */
+
+#cnbc-zoom-image {
+  position: absolute;
+  right: 40px;
+  bottom: 30px;
+  width: 70px;
+  cursor: pointer;
+}
+
+#medium-zoom-image {
+  position: absolute;
+  right: 50px;
+  bottom: 100px;
+  width: 70px;
+  cursor: pointer;
+}
+
+#bulk-zoom-image {
+  position: absolute;
+  right: 30px;
+  bottom: 100px;
   width: 70px;
   cursor: pointer;
 }
@@ -1105,16 +1153,8 @@ a.portfolio-column {
   display: inline-block;
 }
 
-#fitnest-image1 {
-  width: 800px;
-  display: block;
-  cursor: pointer;
-}
+@media (max-width: 1200px) {
 
-#fitnest-image2 {
-  width: 800px;
-  display: block;
-  cursor: pointer;
 }
 
 @media (max-width: 1000px) {
