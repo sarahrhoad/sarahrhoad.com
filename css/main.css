@@ -137,7 +137,7 @@ a[data-toggle="collapse"] {
 }
 
 .button-view-full-design {
-  padding-left: 100px; 
+  padding-left: 100px;
   display: inline-block;
 }
 
@@ -439,7 +439,14 @@ a.portfolio-column {
 }
 
 .section-image {
+  margin: 0 auto;
   position: relative;
+}
+
+.section-image img {
+  margin-top: -54px;
+  width: 800px;
+  cursor: pointer;
 }
 
 .section-image2 {
@@ -498,52 +505,6 @@ a.portfolio-column {
   opacity: 1;
 }
 
-.section-wrapper {
-  padding: 100px 100px 100px 200px;
-  display: flex;
-}
-
-.content-flex-wrapper {
-  display: flex;
-}
-
-.project-section-title {
-  /* padding-left: 100px; */
-}
-
-.project-section-title p {
-  margin-bottom: 30px;
-  font-family: Kalam-Bold;
-  font-size: 24px;
-  letter-spacing: 1px;
-  color: #474747
-}
-
-.three-dots {
-  /* padding-left: 100px; */
-  display: inline-block;
-  vertical-align: top;
-}
-
-.overview-info-wrapper {
-  /* margin: 0 auto; */
-}
-
-.overview-information {
-  display: inline-block;
-}
-
-.verbiage p {
-  padding: 0 30px;
-  display: inline-block;
-  font-family: RobotoCondensed-Regular;
-  letter-spacing: 1px;
-}
-
-.bullet-point {
-  display: inline-block;  
-}
-
 .button-source-code {
   margin-top: 60px;
 }
@@ -562,8 +523,49 @@ a.portfolio-column {
   border: 2.5px solid #1FBBA6;
 }
 
+.section-wrapper {
+  padding: 100px;
+  display: flex;
+}
+
+.overview-info-wrapper {
+  display: inline-flex;
+  width: 100%;
+}
+
+.overview-information {
+  margin: 0 auto;
+}
+
+.project-section-title {
+  vertical-align: top;
+}
+
+.project-section-title p {
+  margin-bottom: 30px;
+  font-family: Kalam-Bold;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: #474747
+}
+
+.verbiage p {
+  padding: 0 30px;
+  display: inline-block;
+  font-family: RobotoCondensed-Regular;
+  letter-spacing: 1px;
+}
+
+.bullet-point {
+  display: inline-block;
+}
+
 .purple-section {
   background-color: #3E1C490C;
+}
+
+.tech-used-flex-wrapper {
+  display: flex;
 }
 
 .key-take-aways-section {
@@ -983,7 +985,7 @@ a.portfolio-column {
 }
 
 #bullet-2-lines {
-  margin-bottom: 30px;
+  margin-bottom: 45px;
 }
 
 #bullet-3-lines {
@@ -1153,9 +1155,7 @@ a.portfolio-column {
   display: inline-block;
 }
 
-@media (max-width: 1200px) {
-
-}
+@media (max-width: 1200px) {}
 
 @media (max-width: 1000px) {
   .graph-wrap {
