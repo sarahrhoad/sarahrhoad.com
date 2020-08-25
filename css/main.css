@@ -1001,8 +1001,8 @@ a.portfolio-column {
 
 #amazon-zoom-image {
   position: absolute;
-  right: 40px;
-  bottom: 40px;
+  right: 10px;
+  bottom: 0;
   width: 70px;
   cursor: pointer;
 }
@@ -1015,8 +1015,8 @@ a.portfolio-column {
 
 #fitnest-zoom-image1 {
   position: absolute;
-  right: 50px;
-  bottom: 150px;
+  right: -10px;
+  bottom: 130px;
   width: 70px;
   cursor: pointer;
 }
@@ -1031,24 +1031,24 @@ a.portfolio-column {
 
 #cnbc-zoom-image {
   position: absolute;
-  right: 40px;
-  bottom: 30px;
+  right: 0;
+  bottom: 10px;
   width: 70px;
   cursor: pointer;
 }
 
 #medium-zoom-image {
   position: absolute;
-  right: 50px;
-  bottom: 100px;
+  right: 0;
+  bottom: 70px;
   width: 70px;
   cursor: pointer;
 }
 
 #bulk-zoom-image {
   position: absolute;
-  right: 30px;
-  bottom: 100px;
+  right: 0;
+  bottom: 50px;
   width: 70px;
   cursor: pointer;
 }
