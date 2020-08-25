@@ -995,9 +995,7 @@ a.portfolio-column {
 #cnbc-image,
 #medium-image,
 #bulk-image {
-  margin-top: -54px;
   width: 800px;
-  /* display: block; */
   cursor: pointer;
 }
 
