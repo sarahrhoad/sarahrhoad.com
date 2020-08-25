@@ -28,7 +28,7 @@ td {
   align-items: stretch;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 a[data-toggle="collapse"] {
@@ -435,7 +435,6 @@ a.portfolio-column {
 
 .image-wrapper {
   margin: 0 auto;
-  z-index: 2;
 }
 
 .section-image {
@@ -453,7 +452,6 @@ a.portfolio-column {
 }
 
 .show {
-  z-index: 3;
   display: none;
 }
 
@@ -469,6 +467,7 @@ a.portfolio-column {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 3;
 }
 
 .show .img-show {
@@ -479,6 +478,10 @@ a.portfolio-column {
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
+}
+
+.img-show {
+  z-index: 3;
 }
 
 .img-show img {
@@ -497,7 +500,7 @@ a.portfolio-column {
   top: 32px;
   cursor: pointer;
   opacity: 0.5;
-  z-index: 1;
+  z-index: 3;
 }
 
 .close-button:hover {
