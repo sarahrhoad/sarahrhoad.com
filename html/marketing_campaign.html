@@ -41,11 +41,11 @@
 </head>
 
 <body>
-  <div class="menu-wrapper">
+  <div id="menu-wrapper">
     <nav id="popout-nav">
       <div class="link-closes-menu" id="close-menu-button"></div>
       <div id="scrollable-menu-content">
-        <div class="menu">
+        <div id="menu">
           <div class="menu-content-item">
             <a class="link-closes-menu" href="../index.html#landing-page">Home</a>
           </div>
@@ -98,7 +98,7 @@
     </div>
   </div>
 
-  <div class="close-menu-page-wrapper">
+  <div id="close-menu-page-wrapper">
     <div id="page-header">
       <p>Fitnest Marketing Campaign</p>
       <div id="project-header-drops"> <img src="../images/project_header_drops.svg" alt="Light purple rain drops">
@@ -106,7 +106,7 @@
     </div>
 
     <div class="container-fluid section-wrapper">
-      <div class="overview-info-wrapper">
+      <div id="overview-info-wrapper">
         <div class="project-section-title">
           <p>Overview</p>
           <div class="three-dots">
@@ -114,7 +114,7 @@
           </div>
         </div>
 
-        <div class="overview-information">
+        <div id="overview-information">
           <div class="verbiage">
             <div>
               <img class="bullet-point" src="../images/bullet_point_drop.svg" alt="Tiny light purple rain drop">
@@ -151,23 +151,23 @@
         </div>
       </div>
 
-      <div class="image-wrapper">
-        <div class="section-image">
-          <img id="fitnest-image1" src="../images/fitnest_final.png" alt="">
+      <div id="image-wrapper">
+        <div id="section-image">
+          <img id="fitnest-image" src="../images/fitnest_final.png" alt="">
           <!-- <img id="fitnest-image2" src="../images/fitnest_mobile_iphone.png" alt=""> -->
-          <img id="fitnest-zoom-image1" src="../images/zoom.svg" alt="">
+          <img id="fitnest-zoom-image" src="../images/zoom.svg" alt="">
         </div>
-        <div class="show">
-          <div class="overlay"></div>
+        <div id="show">
+          <div id="overlay"></div>
           <div>
             <img class="close-button" src="../images/close_button_final.svg" alt="X">
           </div>
-          <div class="img-show">
+          <div id="img-show">
             <img src="../images/fitnest_padding.png" alt="">
           </div>
         </div>
 
-        <!-- <div class="section-image2">
+        <!-- <div id="section-image2">
           <img id="fitnest-image2" src="../images/fitnest_mobile_iphone.png" alt="">
           <img id="fitnest-zoom-image2" src="../images/zoom.svg" alt="">
         </div>
@@ -184,7 +184,7 @@
     </div>
 
     <div class="container-fluid section-wrapper">
-      <div class="tech-used-flex-wrapper">
+      <div id="tech-used-flex-wrapper">
         <div class="project-section-title">
           <p>Technologies Used</p>
           <div class="three-dots">
@@ -228,7 +228,7 @@
           <img src="../images/three_dots.svg" alt="Three green dots">
         </div>
       </div>
-      <div class="key-take-aways-section">
+      <div id="key-take-aways-section">
         <div class="verbiage">
           <div>
             <img class="bullet-point" id="bullet-2-lines" src="../images/bullet_point_drop.svg"
@@ -309,14 +309,14 @@
     $(function () {
       'use strict';
 
-      $('.section-image img').click(function () {
+      $('#section-image img').click(function () {
         var $src = $(this).attr('src');
-        $('.show').toggleClass('active');
+        $('#show').toggleClass('active');
         $('body').css('overflow', 'hidden');
       });
 
       $('.close-button').click(function () {
-        $('.show').toggleClass('active');
+        $('#show').toggleClass('active');
         $('body').css('overflow', 'auto');
       });
     });
@@ -328,7 +328,7 @@
       $('#hamburger').on('click', function (e) {
         e.stopPropagation();
         $('#popout-nav').toggleClass('active');
-        $('body .close-menu-page-wrapper, #close-menu-button').click(function (e) {
+        $('body #close-menu-page-wrapper, #close-menu-button').click(function (e) {
           if ($('#popout-nav').hasClass('active')) {
             $("#popout-nav").toggleClass('active')
           }
