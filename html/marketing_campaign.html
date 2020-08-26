@@ -98,7 +98,7 @@
     </div>
   </div>
 
-  <div id="close-menu-page-wrapper">
+  <div class="close-menu-page-wrapper">
     <div id="page-header">
       <p>Fitnest Marketing Campaign</p>
       <div id="project-header-drops"> <img src="../images/project_header_drops.svg" alt="Light purple rain drops">
@@ -160,7 +160,7 @@
         <div id="show">
           <div id="overlay"></div>
           <div>
-            <img class="close-button" src="../images/close_button_final.svg" alt="X">
+            <img id="close-button" src="../images/close_button_final.svg" alt="X">
           </div>
           <div id="img-show">
             <img src="../images/fitnest_padding.png" alt="">
@@ -315,7 +315,7 @@
         $('body').css('overflow', 'hidden');
       });
 
-      $('.close-button').click(function () {
+      $('#close-button').click(function () {
         $('#show').toggleClass('active');
         $('body').css('overflow', 'auto');
       });
@@ -328,7 +328,7 @@
       $('#hamburger').on('click', function (e) {
         e.stopPropagation();
         $('#popout-nav').toggleClass('active');
-        $('body #close-menu-page-wrapper, #close-menu-button').click(function (e) {
+        $('body .close-menu-page-wrapper, #close-menu-button').click(function (e) {
           if ($('#popout-nav').hasClass('active')) {
             $("#popout-nav").toggleClass('active')
           }

@@ -404,20 +404,6 @@ a.portfolio-column {
   margin-top: 100px;
 }
 
-.close-button {
-  width: 40px;
-  position: fixed;
-  right: 32px;
-  top: 32px;
-  cursor: pointer;
-  opacity: 0.5;
-  z-index: 3;
-}
-
-.close-button:hover {
-  opacity: 1;
-}
-
 .button-source-code {
   margin-top: 60px;
 }
@@ -989,6 +975,19 @@ a.portfolio-column {
   position: fixed;
 }
 
+#close-button {
+  width: 40px;
+  position: fixed;
+  right: 32px;
+  top: 32px;
+  cursor: pointer;
+  opacity: 0.5;
+  z-index: 3;
+}
+
+#close-button:hover {
+  opacity: 1;
+}
 
 #amazon-image,
 #fitnest-image,

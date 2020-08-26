@@ -41,11 +41,11 @@
 </head>
 
 <body>
-  <div class="menu-wrapper">
+  <div id="menu-wrapper">
     <nav id="popout-nav">
       <div class="link-closes-menu" id="close-menu-button"></div>
       <div id="scrollable-menu-content">
-        <div class="menu">
+        <div id="menu">
           <div class="menu-content-item">
             <a class="link-closes-menu" href="../index.html#landing-page">Home</a>
           </div>
@@ -106,13 +106,15 @@
     </div>
 
     <div class="container-fluid section-wrapper">
-      <div class="project-section-title">
-        <p>Overview</p>
-        <div><img src="../images/three_dots.svg" alt="Three green dots"></div>
-      </div>
+      <div id="overview-info-wrapper">
+        <div class="project-section-title">
+          <p>Overview</p>
+          <div class="three-dots">
+            <img src="../images/three_dots.svg" alt="Three green dots">
+          </div>
+        </div>
 
-      <div class="overview-info-wrapper">
-        <div class="overview-information">
+        <div id="overview-information">
           <div class="verbiage">
             <div>
               <img class="bullet-point" src="../images/bullet_point_drop.svg" alt="Tiny light purple rain drop">
@@ -140,17 +142,17 @@
         </div>
       </div>
 
-      <div class="image-wrapper">
-        <div class="section-image">
+      <div id="image-wrapper">
+        <div id="section-image">
           <img id="cnbc-image" src="../images/cnbc_final.png" alt="">
           <img id="cnbc-zoom-image" src="../images/zoom.svg" alt="">
         </div>
-        <div class="show">
-          <div class="overlay"></div>
+        <div id="show">
+          <div id="overlay"></div>
           <div>
-            <img class="close-button" src="../images/close_button_final.svg" alt="X">
+            <img id="close-button" src="../images/close_button_final.svg" alt="X">
           </div>
-          <div class="img-show">
+          <div id="img-show">
             <img src="../images/cnbc_padding.png" alt="">
           </div>
         </div>
@@ -158,7 +160,7 @@
     </div>
 
     <div class="container-fluid section-wrapper">
-      <div class="content-flex-wrapper">
+      <div id="content-flex-wrapper">
         <div class="project-section-title">
           <p>Technologies Used</p>
           <div class="three-dots">
@@ -201,7 +203,7 @@
           <img src="../images/three_dots.svg" alt="Three green dots">
         </div>
       </div>
-      <div class="key-take-aways-section">
+      <div id="key-take-aways-section">
         <div class="verbiage">
           <div>
             <img class="bullet-point" src="../images/bullet_point_drop.svg" alt="Tiny light purple rain drop">
@@ -279,14 +281,14 @@
     $(function () {
       "use strict";
 
-      $(".section-image img").click(function () {
+      $("#section-image img").click(function () {
         var $src = $(this).attr("src");
-        $(".show").toggleClass('active');
+        $("#show").toggleClass('active');
         $('body').css('overflow', 'hidden');
       });
 
-      $(".close-button").click(function () {
-        $(".show").toggleClass('active');
+      $("#close-button").click(function () {
+        $("#show").toggleClass('active');
         $('body').css('overflow', 'auto');
       });
     });
