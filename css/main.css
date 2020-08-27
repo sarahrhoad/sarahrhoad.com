@@ -440,7 +440,19 @@ a.portfolio-column {
 
 .section-image {
   margin: 0 auto;
+  width: fit-content;
   position: relative;
+}
+
+.portfolio-image {
+  width: 800px;
+  cursor: pointer;
+}
+
+.zoom-image {
+  position: absolute;
+  width: 70px;
+  cursor: pointer;
 }
 
 .show {
@@ -978,27 +990,8 @@ a.portfolio-column {
   margin: 0 auto;
 }
 
-#amazon-image,
-#fitnest-image,
-#cnbc-image,
-#medium-image,
-#bulk-image {
-  width: 800px;
-  cursor: pointer;
-}
-
-#amazon-zoom-image,
-#fitnest-zoom-image,
-#cnbc-zoom-image,
-#medium-zoom-image,
-#bulk-zoom-image {
-  position: absolute;
-  width: 70px;
-  cursor: pointer;
-}
-
 #amazon-zoom-image {
-  right: 10px;
+  right: 0;
   bottom: 0;
 }
 
@@ -1150,7 +1143,17 @@ a.portfolio-column {
   display: inline-block;
 }
 
-@media (max-width: 1200px) {}
+@media (max-width: 1400px) {
+
+  .section-wrapper,
+  #overview-info-wrapper {
+    display: block;
+  }
+
+  .project-section-title {
+    margin-bottom: 50px;
+  }
+}
 
 @media (max-width: 1050px) {
   .graph-wrap {
@@ -1161,8 +1164,31 @@ a.portfolio-column {
     max-width: 100%;
   }
 
+  .section-wrapper,
+  #tech-section-wrapper {
+    padding: 100px;
+  }
+
+  .section-image img {
+    max-width: 100%;
+  }
+
+  .portfolio-image {
+    width: 600px;
+  }
+
   .source-code {
     text-align: center;
+  }
+
+  #medium-zoom-image {
+    right: 0px;
+    bottom: 40px;
+  }
+
+  #medium-zoom-image {
+    right: 0px;
+    bottom: 40px;
   }
 
   /* 
@@ -1178,16 +1204,11 @@ a.portfolio-column {
 
 @media (max-width: 850px) {
   .section-header-title {
-    font-size: 35px;
+    font-size: 30px;
   }
 
-  .section-image img {
-    max-width: 80%;
-  }
-
-  #page-header {
-    padding: 0;
-    font-size: 35px;
+  .zoom-image {
+    width: 50px;
   }
 
   #hamburger {
@@ -1195,13 +1216,22 @@ a.portfolio-column {
     width: 24px;
   }
 
-  #skills-header-drops img {
-    width: 110px;
+  #bulk-zoom-image {
+    right: -10px;
+    bottom: 20px;
   }
+
+  /* #page-header {
+    padding: 0;
+    font-size: 35px;
+  } */
+
+  /* #skills-header-drops img {
+    width: 110px;
+  } */
 }
 
 @media (max-width: 615px) {
-
   .container-fluid.about-drops-wrap,
   .container-fluid.skills-drops-wrap,
   .container-fluid.portfolio-drops-wrap {
@@ -1230,6 +1260,15 @@ a.portfolio-column {
 
   .footer-container {
     padding: 0px 40px 100px;
+  }
+
+  .zoom-image {
+    width: 30px;
+  }
+
+  .section-wrapper,
+  #tech-section-wrapper {
+    padding: 100px 40px;
   }
 
   #plant1 {
@@ -1293,10 +1332,40 @@ a.portfolio-column {
     height: 30px;
     width: 30px;
   }
+
+  #medium-zoom-image {
+    right: 0px;
+    bottom: 25px;
+  }
+
+  #bulk-zoom-image {
+    right: -10px;
+    bottom: 10px;
+  }
 }
+
 
 @media (max-width: 450px) {
   #page-header {
     font-size: 31px;
+  }
+
+  .zoom-image {
+    width: 20px;
+  }
+
+  #cnbc-zoom-image {
+    right: -5px;
+    bottom: 0px;
+  }
+
+  #medium-zoom-image {
+    right: 0px;
+    bottom: 15px;
+  }
+
+  #bulk-zoom-image {
+    right: -10px;
+    bottom: 10px;
   }
 }
