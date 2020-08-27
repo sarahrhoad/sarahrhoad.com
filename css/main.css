@@ -38,7 +38,7 @@ a[data-toggle="collapse"] {
   margin: 0;
   padding: 100px 0;
   font-family: Kalam-Bold;
-  font-size: 40px;
+  font-size: 32px;
   color: #474747;
 }
 
@@ -405,7 +405,7 @@ a.portfolio-column {
 }
 
 .section-wrapper {
-  padding: 100px;
+  padding: 100px 150px;
   display: flex;
 }
 
@@ -820,7 +820,7 @@ a.portfolio-column {
 
 #contact-header-drops {
   position: absolute;
-  top: 80px;
+  top: 60px;
   left: 5px;
 }
 
@@ -933,10 +933,10 @@ a.portfolio-column {
 }
 
 #page-header {
-  padding: 100px;
+  padding: 30px 100px;
   font-family: Kalam-Bold;
   position: relative;
-  font-size: 40px;
+  font-size: 32px;
   color: #474747;
 }
 
@@ -947,7 +947,7 @@ a.portfolio-column {
 #project-header-drops {
   position: absolute;
   z-index: -1;
-  top: 60px;
+  top: 0px;
   left: 0px;
 }
 
@@ -1037,7 +1037,7 @@ a.portfolio-column {
 }
 
 #tech-section-wrapper {
-  padding: 100px;
+  padding: 100px 150px;
   display: block;
 }
 
@@ -1062,35 +1062,27 @@ a.portfolio-column {
 }
 
 #fitnest-figma {
-  width: 16%;
+  width: 15%;
 }
 
 #fitnest-figma-bar {
-  width: 16%;
-}
-
-#fitnest-afphoto {
-  width: 20%;
-}
-
-#fitnest-afphoto-bar {
-  width: 20%;
+  width: 15%;
 }
 
 #fitnest-html {
-  width: 32%;
+  width: 42.5%;
 }
 
 #fitnest-html-bar {
-  width: 32%;
+  width: 42.5%;
 }
 
 #fitnest-css {
-  width: 32%;
+  width: 42.5%;
 }
 
 #fitnest-css-bar {
-  width: 32%;
+  width: 42.5%;
 }
 
 #cnbc-figma,
@@ -1216,7 +1208,8 @@ a.portfolio-column {
   .source-code {
     text-align: center;
   }
-/* 
+
+  /* 
   #tech-graph-wrapper {
     flex: 75%
   }
