@@ -152,23 +152,23 @@
       </div>
 
       <div id="image-wrapper">
-        <div id="section-image">
-          <img id="fitnest-image" src="../images/fitnest_final.png" alt="">
+        <div class="section-image">
+          <img id="fitnest-image" src="../images/fitnest_1.png" alt="">
           <!-- <img id="fitnest-image2" src="../images/fitnest_mobile_iphone.png" alt=""> -->
           <img id="fitnest-zoom-image" src="../images/zoom.svg" alt="">
         </div>
-        <div id="show">
-          <div id="overlay"></div>
+        <div class="show">
+          <div class="overlay"></div>
           <div>
-            <img id="close-button" src="../images/close_button_final.svg" alt="X">
+            <img class="close-button" src="../images/close_button_final.svg" alt="X">
           </div>
-          <div id="img-show">
-            <img src="../images/fitnest_padding.png" alt="">
+          <div class="img-show">
+            <img src="../images/fitnest_2.png" alt="">
           </div>
         </div>
 
-        <!-- <div id="section-image2">
-          <img id="fitnest-image2" src="../images/fitnest_mobile_iphone.png" alt="">
+        <div class="section-image">
+          <img id="fitnest-image2" src="../images/fitnest_mobile_1.png" alt="">
           <img id="fitnest-zoom-image2" src="../images/zoom.svg" alt="">
         </div>
         <div class="show">
@@ -177,9 +177,9 @@
             <img class="close-button" src="../images/close_button_final.svg" alt="X">
           </div>
           <div class="img-show">
-            <img src="../images/fitnest_mobile_iphone.png" alt="">
+            <img src="../images/fitnest_mobile_2.png" alt="">
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
 
@@ -193,26 +193,26 @@
         </div>
 
         <div id="tech-graph-wrapper">
-          <div id="graph-tech-used">
-            <div id="amazon-graph">
-              <div id="amazon-names">
-                <p id="amazon-figma">Figma</p>
-                <p id="amazon-aff-photo" class="padded">Affinity Photo</p>
-                <p id="amazon-html" class="padded">HTML</p>
-                <p id="amazon-css" class="padded">CSS</p>
+          <div id="tech-graph">
+            <div>
+              <div id="tech-used-names">
+                <p id="fitnest-figma">Figma</p>
+                <p id="fitnest-afphoto" class="padded">Affinity Photo</p>
+                <p id="fitnest-html" class="padded">HTML</p>
+                <p id="fitnest-css" class="padded">CSS</p>
               </div>
-              <div id="amazon-bars">
-                <div id="amazon-figma-bar" class="tech-green-bars"></div>
-                <div id="amazon-aff-photo-bar" class="padded tech-green-bars"></div>
-                <div id="amazon-html-bar" class="padded tech-purple-bars"></div>
-                <div id="amazon-css-bar" class="padded tech-purple-bars"></div>
+              <div id="tech-used-bars">
+                <div id="fitnest-figma-bar" class="tech-green-bars"></div>
+                <div id="fitnest-afphoto-bar" class="padded tech-green-bars"></div>
+                <div id="fitnest-html-bar" class="padded tech-purple-bars"></div>
+                <div id="fitnest-css-bar" class="padded tech-purple-bars"></div>
               </div>
             </div>
-            <div id="graph-bracket">
-              <div id="graph-line1"></div>
-              <div id="graph-line2"></div>
-              <div id="graph-duration">
-                <p>Project Duration ~3 Days</p>
+            <div>
+              <div id="tech-graph-line1"></div>
+              <div id="tech-graph-line2"></div>
+              <div id="tech-graph-duration">
+                <p>Project Duration ~3 Weeks</p>
               </div>
             </div>
           </div>
@@ -309,14 +309,14 @@
     $(function () {
       'use strict';
 
-      $('#section-image img').click(function () {
+      $('.section-image img').click(function () {
         var $src = $(this).attr('src');
-        $('#show').toggleClass('active');
+        $(this + ' .show').toggleClass('active');
         $('body').css('overflow', 'hidden');
       });
 
-      $('#close-button').click(function () {
-        $('#show').toggleClass('active');
+      $('.close-button').click(function () {
+        $('.show').toggleClass('active');
         $('body').css('overflow', 'auto');
       });
     });

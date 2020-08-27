@@ -140,23 +140,23 @@
       </div>
 
       <div id="image-wrapper">
-        <div id="section-image">
-          <img id="medium-image" src="../images/medium_final.png" alt="">
+        <div class="section-image">
+          <img id="medium-image" src="../images/medium_1.png" alt="">
           <img id="medium-zoom-image" src="../images/zoom.svg" alt="">
         </div>
-        <div id="show">
-          <div id="overlay"></div>
+        <div class="show">
+          <div class="overlay"></div>
           <div>
-            <img id="close-button" src="../images/close_button_final.svg" alt="X">
+            <img class="close-button" src="../images/close_button_final.svg" alt="X">
           </div>
-          <div id="img-show">
-            <img src="../images/medium_padding.png" alt="">
+          <div class="img-show">
+            <img src="../images/medium_2.png" alt="">
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid section-wrapper">
+    <div class="container-fluid section-wrapper" id="tech-section-wrapper">
       <div id="tech-used-flex-wrapper">
         <div class="project-section-title">
           <p>Technologies Used</p>
@@ -166,25 +166,25 @@
         </div>
 
         <div id="tech-graph-wrapper">
-          <div id="graph-tech-used">
-            <div id="amazon-graph">
-              <div id="amazon-names">
-                <p id="amazon-figma">Figma</p>
-                <p id="amazon-aff-photo">Affinity Photo</p>
-                <p id="amazon-html">HTML</p>
-                <p id="amazon-css">CSS</p>
+          <div id="tech-graph">
+            <div>
+              <div id="tech-used-names">
+                <p id="medium-figma">Figma</p>
+                <p id="medium-afphoto" class="padded">Affinity Photo</p>
+                <p id="medium-html" class="padded">HTML</p>
+                <p id="medium-css" class="padded">CSS</p>
               </div>
-              <div id="amazon-bars">
-                <div id="amazon-figma-bar"></div>
-                <div id="amazon-aff-photo-bar"></div>
-                <div id="amazon-html-bar"></div>
-                <div id="amazon-css-bar"></div>
+              <div id="tech-used-bars">
+                <div id="medium-figma-bar" class="tech-green-bars"></div>
+                <div id="medium-afphoto-bar" class="padded tech-green-bars"></div>
+                <div id="medium-html-bar" class="padded tech-purple-bars"></div>
+                <div id="medium-css-bar" class="padded tech-purple-bars"></div>
               </div>
             </div>
-            <div id="graph-bracket">
-              <div id="graph-line1"></div>
-              <div id="graph-line2"></div>
-              <div id="graph-duration">
+            <div>
+              <div id="tech-graph-line1"></div>
+              <div id="tech-graph-line2"></div>
+              <div id="tech-graph-duration">
                 <p>Project Duration ~3 Days</p>
               </div>
             </div>
@@ -285,14 +285,14 @@
     $(function () {
       "use strict";
 
-      $("#section-image img").click(function () {
+      $(".section-image img").click(function () {
         var $src = $(this).attr("src");
-        $("#show").toggleClass('active');
+        $(".show").toggleClass('active');
         $('body').css('overflow', 'hidden');
       });
 
-      $("#close-button").click(function () {
-        $("#show").toggleClass('active');
+      $(".close-button").click(function () {
+        $(".show").toggleClass('active');
         $('body').css('overflow', 'auto');
       });
     });
