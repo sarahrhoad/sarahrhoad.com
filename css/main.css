@@ -759,7 +759,7 @@ a.portfolio-column {
   position: absolute;
   z-index: -1;
   left: 0px;
-  top: 100px;
+  top: 75px;
 }
 
 #plant1 {
@@ -790,7 +790,7 @@ a.portfolio-column {
 #portfolio-header-drops {
   position: absolute;
   z-index: -1;
-  top: 125px;
+  top: 115px;
   left: 0px;
 }
 
@@ -1061,36 +1061,21 @@ a.portfolio-column {
   text-align: center;
 }
 
-#fitnest-figma {
-  width: 15%;
-}
-
+#fitnest-figma,
 #fitnest-figma-bar {
   width: 15%;
 }
 
-#fitnest-html {
-  width: 42.5%;
-}
-
-#fitnest-html-bar {
-  width: 42.5%;
-}
-
-#fitnest-css {
-  width: 42.5%;
-}
-
+#fitnest-html,
+#fitnest-html-bar,
+#fitnest-css,
 #fitnest-css-bar {
   width: 42.5%;
 }
 
 #cnbc-figma,
 #medium-figma,
-#bulk-figma {
-  width: 20%;
-}
-
+#bulk-figma,
 #cnbc-figma-bar,
 #medium-figma-bar,
 #bulk-figma-bar {
@@ -1099,10 +1084,7 @@ a.portfolio-column {
 
 #cnbc-afphoto,
 #medium-afphoto,
-#bulk-afphoto {
-  width: 16%;
-}
-
+#bulk-afphoto,
 #cnbc-afphoto-bar,
 #medium-afphoto-bar,
 #bulk-afphoto-bar {
@@ -1111,73 +1093,47 @@ a.portfolio-column {
 
 #cnbc-html,
 #medium-html,
-#bulk-html {
-  width: 32%;
-}
-
+#bulk-html,
 #cnbc-html-bar,
 #medium-html-bar,
-#bulk-html-bar {
-  width: 32%;
-}
-
+#bulk-html-bar,
 #cnbc-css,
 #medium-css,
-#bulk-css {
-  width: 32%;
-}
-
+#bulk-css,
 #cnbc-css-bar,
 #medium-css-bar,
 #bulk-css-bar {
   width: 32%;
 }
 
-#amazon-figma {
-  width: 22%;
-}
-
+#amazon-figma,
 #amazon-figma-bar {
   width: 22%;
 }
 
-#amazon-afphoto {
-  width: 18%;
-}
-
+#amazon-afphoto,
 #amazon-afphoto-bar {
   width: 18%;
 }
 
-#amazon-html {
-  width: 30%;
-}
-
-#amazon-html-bar {
-  width: 30%;
-}
-
-#amazon-css {
-  width: 30%;
-}
-
+#amazon-html,
+#amazon-html-bar,
+#amazon-css,
 #amazon-css-bar {
   width: 30%;
 }
 
-#amazon-css-bar {
-  width: 30%;
+#tech-graph-line1,
+#tech-graph-line2 {
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
 }
 
 #tech-graph-line1 {
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
   height: 10px;
 }
 
 #tech-graph-line2 {
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
   border-top: 2px solid #000;
   height: 12px;
 }
