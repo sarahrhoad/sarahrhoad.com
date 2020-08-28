@@ -1164,6 +1164,10 @@ a.portfolio-column {
     max-width: 100%;
   }
 
+  .row.verbiage {
+    margin-left: 0;
+  }
+
   .section-wrapper,
   #tech-section-wrapper {
     padding: 100px;
@@ -1274,11 +1278,6 @@ a.portfolio-column {
 
   #page-header {
     padding: 30px 40px;
-  }
-
-  #overview-information,
-  #key-take-aways-section {
-    padding-left: 15px;
   }
 
   #medium-zoom-image {
