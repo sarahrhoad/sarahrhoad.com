@@ -1185,11 +1185,6 @@ a.portfolio-column {
     right: 0px;
     bottom: 40px;
   }
-
-  #medium-zoom-image {
-    right: 0px;
-    bottom: 40px;
-  }
 }
 
 @media (max-width: 850px) {
@@ -1210,10 +1205,6 @@ a.portfolio-column {
     right: -10px;
     bottom: 20px;
   }
-
-  /* #skills-header-drops img {
-    width: 110px;
-  } */
 }
 
 @media (max-width: 615px) {
@@ -1290,6 +1281,11 @@ a.portfolio-column {
     padding-left: 15px;
   }
 
+  #medium-zoom-image {
+    right: 10px;
+    bottom: 50px;
+  }
+
   #cnbc-zoom-image {
     right: 0px;
     bottom: 20px;
@@ -1338,8 +1334,8 @@ a.portfolio-column {
   }
 
   #medium-zoom-image {
-    right: 0px;
-    bottom: 25px;
+    right: 10px;
+    bottom: 40px;
   }
 
   #bulk-zoom-image {
@@ -1364,8 +1360,8 @@ a.portfolio-column {
   }
 
   #medium-zoom-image {
-    right: 0px;
-    bottom: 15px;
+    right: 5px;
+    bottom: 30px;
   }
 
   #bulk-zoom-image {
