@@ -1289,6 +1289,11 @@ a.portfolio-column {
     right: 0px;
     bottom: 20px;
   }
+
+  #amazon-zoom-image {
+    right: 10px;
+    bottom: 10px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -1352,7 +1357,6 @@ a.portfolio-column {
   }
 }
 
-
 @media (max-width: 450px) {
   .zoom-image {
     width: 20px;
@@ -1366,5 +1370,10 @@ a.portfolio-column {
   #bulk-zoom-image {
     right: -10px;
     bottom: 10px;
+  }
+  
+  #amazon-zoom-image {
+    right: 10px;
+    bottom: 5px;
   }
 }
