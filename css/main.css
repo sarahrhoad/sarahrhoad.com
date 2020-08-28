@@ -477,8 +477,8 @@ a.portfolio-column {
 }
 
 .show .img-show {
-  width: 90%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -491,7 +491,7 @@ a.portfolio-column {
 }
 
 .img-show img {
-  width: 80%;
+  width: 90%;
   height: auto;
   top: 50%;
   left: 50%;
