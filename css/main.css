@@ -440,7 +440,7 @@ a.portfolio-column {
   background-color: #3E1C490C;
 }
 
-.section-image {
+.section-image, .section-image2 {
   margin: 0 auto;
   width: fit-content;
   position: relative;
@@ -457,15 +457,15 @@ a.portfolio-column {
   cursor: pointer;
 }
 
-.show {
+.show, .show2 {
   display: none;
 }
 
-.show.active {
+.show.active, .show2.active {
   display: block;
 }
 
-.show .overlay {
+.show .overlay, .show2 .overlay {
   display: block;
   width: 100%;
   height: 100%;
@@ -476,7 +476,7 @@ a.portfolio-column {
   z-index: 3;
 }
 
-.show .img-show {
+.show .img-show, .show2 .img-show {
   width: 80%;
   height: 80%;
   position: fixed;
