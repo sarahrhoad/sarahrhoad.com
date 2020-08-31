@@ -1225,7 +1225,9 @@ a.portfolio-column {
 
   .img-show#fitnest-landscape,
   .img-show#cnbc-landscape,
-  .img-show#medium-landscape {
+  .img-show#medium-landscape,
+  .img-show#amazon-landscape,
+  .img-show#bulk-landscape {
     width: 70%;
   }
 }
