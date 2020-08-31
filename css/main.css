@@ -1425,10 +1425,17 @@ a.portfolio-column {
 
   #fitnest-zoom-image {
     right: -6px;
-    bottom: 49px;
+    bottom: 55px;
   }
 
   #fitnest-zoom-image2 {
     bottom: 20px;
   }
+}
+
+/* @media (max-width: 450px) {
+  #fitnest-zoom-image {
+    right: -6px;
+    bottom: 49px;
+  } */
 }
