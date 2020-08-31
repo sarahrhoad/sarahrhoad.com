@@ -440,7 +440,8 @@ a.portfolio-column {
   background-color: #3E1C490C;
 }
 
-.section-image, .section-image2 {
+.section-image,
+.section-image2 {
   margin: 0 auto;
   width: fit-content;
   position: relative;
@@ -457,15 +458,18 @@ a.portfolio-column {
   cursor: pointer;
 }
 
-.show, .show2 {
+.show,
+.show2 {
   display: none;
 }
 
-.show.active, .show2.active {
+.show.active,
+.show2.active {
   display: block;
 }
 
-.show .overlay, .show2 .overlay {
+.show .overlay,
+.show2 .overlay {
   display: block;
   width: 100%;
   height: 100%;
@@ -476,7 +480,8 @@ a.portfolio-column {
   z-index: 3;
 }
 
-.show .img-show, .show2 .img-show {
+.show .img-show,
+.show2 .img-show {
   width: 80%;
   height: 80%;
   position: fixed;
@@ -988,18 +993,9 @@ a.portfolio-column {
   bottom: 130px;
 }
 
-#fitnest-image2 {
-  width: 800px;
-  display: block;
-  cursor: pointer;
-}
-
 #fitnest-zoom-image2 {
-  position: absolute;
   right: 90px;
   bottom: 40px;
-  width: 70px;
-  cursor: pointer;
 }
 
 #cnbc-zoom-image {
@@ -1173,7 +1169,8 @@ a.portfolio-column {
     padding: 100px;
   }
 
-  .section-image img {
+  .section-image img,
+  .section-image2 img {
     max-width: 100%;
   }
 
@@ -1189,6 +1186,16 @@ a.portfolio-column {
     right: 0px;
     bottom: 40px;
   }
+
+  #fitnest-zoom-image {
+    right: -10px;
+    bottom: 95px;
+  }
+
+  #fitnest-zoom-image2 {
+    right: 70px;
+    bottom: 30px;
+  }
 }
 
 @media (max-width: 850px) {
@@ -1203,6 +1210,16 @@ a.portfolio-column {
 
   .zoom-image {
     width: 50px;
+  }
+
+  #fitnest-zoom-image {
+    right: -15px;
+    bottom: 70px;
+  }
+
+  #fitnest-zoom-image2 {
+    right: 55px;
+    bottom: 25px;
   }
 }
 
@@ -1294,6 +1311,16 @@ a.portfolio-column {
     right: -10px;
     bottom: 25px;
   }
+
+  #fitnest-zoom-image {
+    right: -10px;
+    bottom: 80px;
+  }
+
+  #fitnest-zoom-image2 {
+    right: 65px;
+    bottom: 30px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -1352,6 +1379,15 @@ a.portfolio-column {
     bottom: 10px;
   }
 
+  #fitnest-zoom-image {
+    right: -10px;
+    bottom: 65px;
+  }
+
+  #fitnest-zoom-image2 {
+    right: 50px;
+  }
+
   #tech-graph {
     font-size: 14px;
   }
@@ -1375,5 +1411,15 @@ a.portfolio-column {
   #amazon-zoom-image {
     right: 10px;
     bottom: 5px;
+  }
+
+  #fitnest-zoom-image {
+    right: 0px;
+    bottom: 50px;
+  }
+
+  #fitnest-zoom-image2 {
+    right: 35px;
+    bottom: 25px;
   }
 }
