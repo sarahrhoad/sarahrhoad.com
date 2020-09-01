@@ -1178,6 +1178,7 @@ a.portfolio-column {
   }
 
   .section-wrapper,
+  .image-section-wrapper,
   #tech-section-wrapper {
     padding: 100px;
   }
