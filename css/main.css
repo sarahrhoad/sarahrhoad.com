@@ -1433,9 +1433,8 @@ a.portfolio-column {
   }
 }
 
-/* @media (max-width: 450px) {
+@media (max-width: 400px) {
   #fitnest-zoom-image {
-    right: -6px;
     bottom: 49px;
-  } */
+  }
 }
