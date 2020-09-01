@@ -67,6 +67,7 @@ a[data-toggle="collapse"] {
   color: #fdfdfd;
   background: #3E1C49;
   text-decoration: none;
+  outline: none;
   font-size: 22px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -96,6 +97,7 @@ a[data-toggle="collapse"] {
   color: #3E1C49;
   background: #fdfdfd;
   text-decoration: none;
+  outline: none;
   font-weight: bold;
   letter-spacing: 1px;
   font-family: RobotoCondensed-Bold;
@@ -109,6 +111,8 @@ a[data-toggle="collapse"] {
   background: #1FBBA6;
   text-decoration: none;
   color: #fdfdfd;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 
 .button-view-full-design {
@@ -123,6 +127,7 @@ a[data-toggle="collapse"] {
   border-radius: 90px;
   color: #000;
   text-decoration: none;
+  outline: none;
   font-size: 22px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -140,11 +145,9 @@ a[data-toggle="collapse"] {
 }
 
 @-moz-document url-prefix() {
-  .button-1 {
-    font-family: RobotoCondensed-Regular;
-  }
-
-  .button-2 {
+  .button-1,
+  .button-2,
+  .button-3 {
     font-family: RobotoCondensed-Regular;
   }
 }
