@@ -371,9 +371,6 @@
     </div>
   </div>
 
-
-
-
   <!-- jQuery CDN - Slim version (=without AJAX) -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -399,24 +396,6 @@
     });
   </script>
 
-  <!-- <script type="text/javascript">
-    $(function () {
-      "use strict";
-
-      $(".section-image img").click(function () {
-        var $src = $(this).attr("src");
-        $(".show").toggleClass('active');
-        $(".img-show img").attr("src", $src);
-        $('body').css('overflow', 'hidden');
-      });
-
-      $(".close-button").click(function () {
-        $(".show").toggleClass('active');
-        $('body').css('overflow', 'auto');
-      });
-    });
-  </script> -->
-
   <script type="text/javascript">
     $(document).ready(function () {
 
@@ -432,6 +411,40 @@
 
     });
   </script>
+
+  <!-- <script>
+    (function () {
+      scrollTo();
+    })();
+
+    function scrollTo() {
+      const links = document.querySelectorAll('.button-1');
+      links.forEach(each => (each.onclick = scrollAnchors));
+    }
+
+    function scrollAnchors(e, respond = null) {
+      const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
+      e.preventDefault();
+      var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
+      const targetAnchor = document.querySelector(targetID);
+      if (!targetAnchor) return;
+      const originalTop = distanceToTop(targetAnchor);
+      window.scrollBy({
+        top: originalTop,
+        left: 0,
+        behavior: 'smooth'
+      });
+      const checkIfDone = setInterval(function () {
+        const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
+        if (distanceToTop(targetAnchor) === 0 || atBottom) {
+          targetAnchor.tabIndex = '-1';
+          targetAnchor.focus();
+          window.history.pushState('', '', targetID);
+          clearInterval(checkIfDone);
+        }
+      }, 100);
+    }
+  </script> -->
 
 </body>
 
