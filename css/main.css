@@ -149,6 +149,7 @@ a[data-toggle="collapse"] {
 }
 
 @-moz-document url-prefix() {
+
   .button-1,
   .button-2,
   .button-3 {
@@ -833,7 +834,8 @@ a.portfolio-column {
 
 #portfolio-amazon-logo,
 #portfolio-medium-logo,
-#portfolio-bulk-logo {
+#portfolio-bulk-logo,
+#portfolio-company-x-logo {
   margin: 0 auto;
   width: 145px;
 }
@@ -991,6 +993,11 @@ a.portfolio-column {
   margin: 0 auto;
 }
 
+#company-x-zoom-image {
+  right: -30px;
+  bottom: -25px;
+}
+
 #amazon-zoom-image {
   right: 0;
   bottom: 0;
@@ -1106,6 +1113,16 @@ a.portfolio-column {
 #amazon-css,
 #amazon-css-bar {
   width: 30%;
+}
+
+#company-x-figma,
+#company-x-figma-bar {
+  width: 80%;
+}
+
+#company-x-afphoto,
+#company-x-afphoto-bar {
+  width: 20%;
 }
 
 #tech-graph-line1,
@@ -1314,6 +1331,11 @@ a.portfolio-column {
 
   #page-header {
     padding: 30px 40px;
+  }
+
+  #company-x-zoom-image {
+    right: -10px;
+    bottom: -10px;
   }
 
   #medium-zoom-image {
