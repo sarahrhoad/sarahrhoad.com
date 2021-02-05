@@ -1258,7 +1258,8 @@ a.portfolio-column {
   .img-show#cnbc-landscape,
   .img-show#medium-landscape,
   .img-show#amazon-landscape,
-  .img-show#bulk-landscape {
+  .img-show#bulk-landscape,
+  .img-show#company-x-landscape {
     width: 70%;
   }
 }
